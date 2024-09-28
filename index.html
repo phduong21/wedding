@@ -70,17 +70,17 @@
 	<!-- <link rel='shortcut icon' type='image/x-icon' href='/favicon.ico' /> -->
 
 	<!-- Link to Font Awesome for icons -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 
 <body>
-<!-- Button with mute icon by default -->
-<button class="music-button" onclick="toggleMusic()">
-    <i id="musicIcon" class="fas fa-volume-mute"></i> <!-- Default mute icon -->
-</button>
+	<!-- Button with mute icon by default -->
+	<button class="music-button" onclick="toggleMusic()">
+		<i id="musicIcon" class="fas fa-volume-mute"></i> <!-- Default mute icon -->
+	</button>
 
-<!-- Audio element -->
-<audio id="audioPlayer" src="./proposal.mp3"></audio>
+	<!-- Audio element -->
+	<audio id="audioPlayer" src="./ToTheMoon-hooligan.mp3"></audio>
 
 
 	<div id="page">
@@ -207,7 +207,8 @@
 
 										</p>
 										<!-- TODO: Update location -->
-										<a href="https://maps.app.goo.gl/LKVrpFWxMCK4ePRL7" class="btn-map" target="_blank">Xem bản đồ</a>
+										<a href="https://maps.app.goo.gl/LKVrpFWxMCK4ePRL7" class="btn-map"
+											target="_blank">Xem bản đồ</a>
 									</div>
 								</div>
 								<div class="col-md-4 col-sm-6 text-center">
@@ -228,7 +229,8 @@
 										<p>Số 6, đường hồ Tai Trâu, phố Ngọc Lâm, Long Biên, Hà Nội</p>
 
 										</p>
-										<a href="https://maps.app.goo.gl/k7gLfhAnefpM1Mmi9" class="btn-map" target="_blank">Xem bản đồ</a>
+										<a href="https://maps.app.goo.gl/k7gLfhAnefpM1Mmi9" class="btn-map"
+											target="_blank">Xem bản đồ</a>
 									</div>
 								</div>
 								<div class="col-md-4 col-sm-6 text-center">
@@ -251,7 +253,8 @@
 										</p>
 
 										</p>
-										<a href="https://maps.app.goo.gl/rq5NA6hY1hhuTy6C6" class="btn-map" target="_blank">Xem bản đồ</a>
+										<a href="https://maps.app.goo.gl/rq5NA6hY1hhuTy6C6" class="btn-map"
+											target="_blank">Xem bản đồ</a>
 									</div>
 								</div>
 							</div>
@@ -545,7 +548,8 @@
 						</div>
 					</div>
 					<div class="btn-wishes-wrapper animate-box">
-						<a href="https://docs.google.com/forms/d/e/1FAIpQLSc_wR5TampJsadTYMkHG03UKWxmuG1J1ZaRduGc1f7Ou7vCTA/viewform" target="_blank">Gửi lời chúc ❤</a>
+						<a href="https://docs.google.com/forms/d/e/1FAIpQLSc_wR5TampJsadTYMkHG03UKWxmuG1J1ZaRduGc1f7Ou7vCTA/viewform"
+							target="_blank">Gửi lời chúc ❤</a>
 					</div>
 				</div>
 			</div>
@@ -639,7 +643,8 @@
 								</div>
 							</div> -->
 							<div class="col-md-12 col-sm-12">
-								<button type="submit" id="surveyButton" class="btn btn-default btn-block">Phiếu Khảo Sát</button>
+								<button type="submit" id="surveyButton" class="btn btn-default btn-block">Phiếu Khảo
+									Sát</button>
 							</div>
 						</form>
 					</div>
@@ -647,9 +652,11 @@
 				<div style="height: 48px"></div>
 
 				<!-- Hidden iframe initially -->
-        <div id="surveyIframe" style="display:none; margin-top: 20px;">
-            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeEVut1ZjEsg_wjA2VsLrO7QVovXImBSNRuBhDc1mbPyOd78g/viewform?embedded=true" width="100%" height="990" frameborder="0" marginheight="0" marginwidth="0">Đang tải…</iframe>
-        </div>
+				<div id="surveyIframe" style="display:none; margin-top: 20px;">
+					<iframe
+						src="https://docs.google.com/forms/d/e/1FAIpQLSeEVut1ZjEsg_wjA2VsLrO7QVovXImBSNRuBhDc1mbPyOd78g/viewform?embedded=true"
+						width="100%" height="990" frameborder="0" marginheight="0" marginwidth="0">Đang tải…</iframe>
+				</div>
 			</div>
 		</div>
 
@@ -719,35 +726,35 @@
 		});
 	</script>
 
-<script>
-    function showSurvey() {
-        // Prevent form submission
-        event.preventDefault();
-        // Show the hidden iframe
-        document.getElementById("surveyIframe").style.display = "block";
-				// Hide the submit button
-        document.getElementById("surveyButton").style.display = "none";
-        return false;
-    }
-</script>
+	<script>
+		function showSurvey() {
+			// Prevent form submission
+			event.preventDefault();
+			// Show the hidden iframe
+			document.getElementById("surveyIframe").style.display = "block";
+			// Hide the submit button
+			document.getElementById("surveyButton").style.display = "none";
+			return false;
+		}
+	</script>
 
-<script>
-    function toggleMusic() {
-        var audio = document.getElementById("audioPlayer");
-        var icon = document.getElementById("musicIcon");
+	<script>
+		function toggleMusic() {
+			var audio = document.getElementById("audioPlayer");
+			var icon = document.getElementById("musicIcon");
 
-        // Toggle between playing and pausing
-        if (audio.paused) {
-            audio.play();
-            icon.classList.remove("fa-volume-mute"); // Remove mute icon
-            icon.classList.add("fa-volume-up"); // Add speaker icon
-        } else {
-            audio.pause();
-            icon.classList.remove("fa-volume-up"); // Remove speaker icon
-            icon.classList.add("fa-volume-mute"); // Add mute icon
-        }
-    }
-</script>
+			// Toggle between playing and pausing
+			if (audio.paused) {
+				audio.play();
+				icon.classList.remove("fa-volume-mute"); // Remove mute icon
+				icon.classList.add("fa-volume-up"); // Add speaker icon
+			} else {
+				audio.pause();
+				icon.classList.remove("fa-volume-up"); // Remove speaker icon
+				icon.classList.add("fa-volume-mute"); // Add mute icon
+			}
+		}
+	</script>
 </body>
 
 </html>
