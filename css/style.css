@@ -1845,4 +1845,21 @@ form label {
   opacity: 0;
 }
 
+.btn-map {
+  display: inline-block;
+  padding: 10px 20px; /* Kích thước nút */
+  background-color: #d6dce3; /* Màu nền */
+  color: #F14E95; /* Màu chữ */
+  border: none; /* Không có đường viền */
+  font-size: large;
+  border-radius: 25px; /* Bo tròn */
+  text-decoration: none; /* Bỏ gạch chân */
+  font-size: 16px; /* Kích thước chữ */
+  transition: background-color 0.3s; /* Hiệu ứng chuyển màu */
+}
+
+.btn-map:hover {
+  background-color: #F14E95;; /* Màu nền khi hover */
+  color: #d6dce3;
+}
 /*# sourceMappingURL=style.css.map */
