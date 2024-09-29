@@ -43,6 +43,11 @@
 
 	<link href='https://fonts.googleapis.com/css?family=Work+Sans:400,300,600,400italic,700' rel='stylesheet'
 		type='text/css'>
+	<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&family=Roboto:wght@400;500&display=swap"
+		rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
+
+
 	<link href="https://fonts.googleapis.com/css?family=Sacramento" rel="stylesheet">
 	<!-- Animate.css -->
 	<link rel="stylesheet" href="css/animate.css">
@@ -78,6 +83,14 @@
 	<button class="music-button" onclick="toggleMusic()">
 		<i id="musicIcon" class="fas fa-volume-mute"></i> <!-- Default mute icon -->
 	</button>
+	<!-- 
+	<button id="123" class="money-button">
+		<i class="fa-solid fa-sack-dollar"></i> -->
+	<!-- <img src="./images/sack-dollar-solid.png" alt="123" width="27px" , height="27px">
+	<i id="musicIcon" class="fa-solid fa-sack-dollar"></i>
+		<i class="fa-solid fa-money-bill"></i> -->
+	<!-- </button> -->
+
 
 	<!-- Audio element -->
 	<audio id="audioPlayer" src="./ToTheMoon-hooligan.mp3"></audio>
@@ -549,7 +562,7 @@
 					</div>
 					<div class="btn-wishes-wrapper animate-box">
 						<a href="https://docs.google.com/forms/d/e/1FAIpQLSc_wR5TampJsadTYMkHG03UKWxmuG1J1ZaRduGc1f7Ou7vCTA/viewform"
-							target="_blank">Gửi lời chúc ❤</a>
+							target="_blank">Gửi Lời Chúc ❤</a>
 					</div>
 				</div>
 			</div>
@@ -557,16 +570,43 @@
 
 		<div id="fh5co-services" class="fh5co-section-gray">
 			<div class="container">
+				<section id="weddingSection">
+					<div class="row animate-box">
+						<div class="col-md-8 col-md-offset-2 text-center fh5co-heading hop-cuoi-title">
+							<!-- Section Chúc Phúc -->
+							<h2>Hộp mừng cưới</h2>
 
-				<div class="row animate-box">
-					<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
-						<h2>We Offer Services</h2>
-						<p>Dignissimos asperiores vitae velit veniam totam fuga molestias accusamus alias autem
-							provident. Odit ab aliquam dolor eius.</p>
+							<p>Thật vui mừng khi được đón tiếp và chia sẻ niềm hạnh phúc này với tất cả mọi người!</p>
+							<!-- <button class="blessing-button" id="blessingButton">Chúc Phúc</button> -->
+
+						</div>
 					</div>
-				</div>
+					<!-- Groom and Bride Boxes -->
+					<!-- Groom and Bride Sections -->
+					<div class="row">
+						<div class="col-md-6 col-sm-12 text-center groom-section">
+							<div class="wedding-border">
+								<h3>Đến Chú Rể</h3>
+								<img src="./images/QR-chure.png" alt="QR code chú rể" class="qr-code">
+								<p>Ngân hàng: TECHCOMBANK</p>
+								<p>Tên tài khoản: PHAM DUY ANH</p>
+								<p>Số tài khoản: 1903 2507 1377 76</p>
+							</div>
+						</div>
 
-				<div class="row">
+						<div class="col-md-6 col-sm-12 text-center bride-section">
+							<div class="wedding-border">
+								<h3>Đến Cô Dâu</h3>
+								<img src="./images/QR-codau.png" alt="QR code cô dâu" class="qr-code">
+								<p>Ngân hàng: VIETCOMBANK</p>
+								<p>Tên tài khoản: PHAM LAN CHI</p>
+								<p>Số tài khoản: 1048 8974 05</p>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<!-- <div class="row">
 					<div class="col-md-6">
 						<div class="feature-left animate-box" data-animate-effect="fadeInLeft">
 							<span class="icon">
@@ -611,7 +651,7 @@
 						</div>
 					</div>
 				</div>
-
+ -->
 
 			</div>
 		</div>
@@ -643,8 +683,8 @@
 								</div>
 							</div> -->
 							<div class="col-md-12 col-sm-12">
-								<button type="submit" id="surveyButton" class="btn btn-default btn-block">Phiếu Khảo
-									Sát</button>
+								<button type="submit" id="surveyButton" class="btn btn-default btn-block">Xác nhận tham
+									dự</button>
 							</div>
 						</form>
 					</div>
@@ -679,9 +719,96 @@
 		</footer> -->
 	</div>
 
-	<div class="gototop js-top">
-		<a href="#" class="js-gotop"><i class="icon-arrow-up"></i></a>
+	<!-- <div id="qrPopup" class="qr-popup"></div>
+	<div class="qr-popup-content">
+		<span class="qr-popup-close">&times;</span>
+		<h3>Mã QR của cô dâu và chú rể</h3>
+		<div class="qr-popup-images">
+			<img src="qr-code-bride.png" alt="QR Code của cô dâu">
+			<img src="qr-code-groom.png" alt="QR Code của chú rể">
+		</div>
 	</div>
+	</div> -->
+	<!-- <div class="gototop js-top">
+		<a href="#" class="js-gotop"><i class="fa-solid fa-bars"></i></a>
+	</div> -->
+	<div class="menu-buttons" id="menuButtons">
+		<a href="https://docs.google.com/forms/d/e/1FAIpQLSc_wR5TampJsadTYMkHG03UKWxmuG1J1ZaRduGc1f7Ou7vCTA/viewform"
+			target="_blank">
+			<i class="fas fa-comment"></i>
+			<span>Gửi Lời Chúc</span> <!-- Text cho nút gửi lời chúc -->
+		</a>
+		<a href="https://docs.google.com/forms/d/e/1FAIpQLSeEVut1ZjEsg_wjA2VsLrO7QVovXImBSNRuBhDc1mbPyOd78g/viewform?embedded=true"
+			target="_blank">
+			<i class="fas fa-envelope-open-text"></i>
+			<span>Xác Nhận Tham Dự</span> <!-- Text cho nút xác nhận tham dự -->
+		</a>
+		<!-- <section class="wedding-menu">
+			<a href="#blessingSection">
+				<i class="fas fa-gift"></i>
+				<span>Mừng Cưới</span>
+			</a>
+		</section> -->
+		<a href="#weddingSection">
+			<i class="fas fa-gift"></i>
+			<span>Mừng Cưới</span>
+		</a>
+	</div>
+	<button class="floating-button" id="mainButton"><i class="fas fa-bars"></i></button>
+	<!-- Pop-up QR -->
+	<!-- <div id="qrPopup" class="qr-popup">
+		<div class="qr-popup-content">
+			<span class="qr-popup-close">&times;</span>
+			<h3>Mã QR của cô dâu và chú rể</h3>
+			<div class="qr-popup-images">
+				 Tới cô dâu
+				<div>
+					<h4>Tới cô dâu</h4>
+					<img src="./images/QR-codau.png" alt="QR Code của cô dâu">
+					<div class="account-info">
+						<p><strong>Ngân hàng:</strong> Techcombank</p>
+						<p><strong>Tên tài khoản:</strong> Nguyễn Thị A</p>
+						<p><strong>Số tài khoản:</strong> 123456789</p>
+						<p><strong>Chi nhánh:</strong> Hà Nội</p>
+					</div>
+				</div>
+				Tới chú rể
+				<div>
+					<h4>Tới chú rể</h4>
+					<img src="./images/QR-chure.png" alt="QR Code của chú rể">
+					<div class="account-info">
+						<p><strong>Ngân hàng:</strong> Vietcombank</p>
+						<p><strong>Tên tài khoản:</strong> Trần Văn B</p>
+						<p><strong>Số tài khoản:</strong> 987654321</p>
+						<p><strong>Chi nhánh:</strong> Hồ Chí Minh</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div> -->
+
+	<script>
+		const mainButton = document.getElementById('mainButton');
+		const menuButtons = document.getElementById('menuButtons');
+		const mainButtonIcon = mainButton.querySelector('i'); // Lấy icon của nút chính
+
+		let isOpen = false;
+
+		mainButton.addEventListener('click', () => {
+			isOpen = !isOpen;
+			if (isOpen) {
+				menuButtons.classList.add('show');  // Hiển thị các nút
+				mainButton.classList.add('active');  // Thêm lớp active cho hiệu ứng nút chính
+				mainButtonIcon.classList.remove('fa-bars'); // Đổi icon từ hamburger sang dấu X
+				mainButtonIcon.classList.add('fa-times');
+			} else {
+				menuButtons.classList.remove('show');  // Ẩn các nút
+				mainButton.classList.remove('active');  // Gỡ bỏ lớp active của nút chính
+				mainButtonIcon.classList.remove('fa-times'); // Đổi icon từ dấu X về hamburger
+				mainButtonIcon.classList.add('fa-bars');
+			}
+		});
+	</script>
 
 	<!-- jQuery -->
 	<script src="js/jquery.min.js"></script>
@@ -754,6 +881,30 @@
 				icon.classList.add("fa-volume-mute"); // Add mute icon
 			}
 		}
+	</script>
+
+	<script>
+		// Lấy phần tử nút chúc phúc và pop-up
+		const blessingButton = document.getElementById('blessingButton');
+		const qrPopup = document.getElementById('qrPopup');
+		const closeBtn = document.querySelector('.qr-popup-close');
+
+		// Khi nhấn nút "Chúc Phúc", hiển thị pop-up
+		blessingButton.addEventListener('click', function () {
+			qrPopup.style.display = 'block';
+		});
+
+		// Khi nhấn nút "X" để đóng pop-up
+		closeBtn.addEventListener('click', function () {
+			qrPopup.style.display = 'none';
+		});
+
+		// Đóng pop-up khi nhấn ra ngoài
+		window.addEventListener('click', function (event) {
+			if (event.target == qrPopup) {
+				qrPopup.style.display = 'none';
+			}
+		});
 	</script>
 </body>
 

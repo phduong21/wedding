@@ -1960,3 +1960,304 @@ form label {
   align-items: center;
   justify-content: center;
 }
+
+.money-button {
+  z-index: 100;
+  position: fixed;
+  bottom: 85px;
+  left: 20px;
+  padding: 16px;
+  background-color: #f14e95;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 24px; /* Font size for the icon */
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.floating-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #f14e95; /* Màu mới */
+  border: none;
+  color: white;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  width: 59px; /* Chiều rộng mới */
+  height: 56px; /* Chiều cao mới */
+  transition: transform 0.3s ease;
+}
+
+.floating-button.active {
+  transform: rotate(90deg); /* Xoay nút khi mở menu */
+}
+
+.menu-buttons {
+  position: fixed;
+  bottom: 90px; /* Điều chỉnh lại bottom */
+  right: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  pointer-events: none; /* Ngăn các nút bị click khi đóng */
+}
+
+.menu-buttons a {
+  background-color: #f14e95; /* Màu mới */
+  border: none;
+  color: white;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 16px;
+  width: 59px; /* Chiều rộng mới */
+  height: 56px; /* Chiều cao mới */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative; /* Để định vị text */
+  opacity: 0;
+  transform: translateY(100px); /* Hiệu ứng chuyển động */
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  margin: 10px 0; /* Khoảng cách giữa các nút */
+  text-decoration: none; /* Bỏ gạch dưới */
+}
+
+.menu-buttons.show a {
+  pointer-events: auto;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.menu-buttons a span {
+  position: absolute;
+  top: 50%; /* Giữa theo chiều dọc */
+  right: 65px; /* Khoảng cách bên phải nút */
+  transform: translateY(-50%); /* Căn giữa theo chiều dọc */
+  background: #f14e95;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 12px;
+  opacity: 0; /* Ẩn text ban đầu */
+  transition: opacity 0.3s ease;
+  pointer-events: none; /* Ngăn text bị click */
+}
+
+.menu-buttons a:hover span {
+  opacity: 1; /* Hiện text khi hover */
+}
+
+.menu-buttons a i {
+  font-size: 24px;
+}
+
+@media only screen and (max-width: 600px) {
+  .floating-button {
+      bottom: 15px;
+      right: 15px;
+      font-size: 16px;
+      width: 59px; /* Kích thước mới */
+      height: 56px; /* Kích thước mới */
+  }
+
+  .menu-buttons {
+      bottom: 75px; /* Điều chỉnh lại khoảng cách */
+      right: 15px;
+  }
+
+  .menu-buttons a {
+      width: 59px; /* Kích thước mới cho mobile */
+      height: 56px; /* Kích thước mới cho mobile */
+      font-size: 18px;
+      margin: 10px 0; /* Khoảng cách giữa các nút trên mobile */
+  }
+}
+
+/* .menu-buttons {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+} */
+
+.wedding-menu-buttons {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.wedding-menu-buttons a {
+  font-size: 20px;
+  color: #FF69B4;
+  text-decoration: none;
+  padding: 10px 20px;
+  border: 2px solid #FF69B4;
+  border-radius: 8px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.wedding-menu-buttons a:hover {
+  background-color: #FF69B4;
+  color: white;
+}
+
+.wedding-menu-buttons i {
+  font-size: 18px;
+}
+
+/* Phong cách cho nút Chúc Phúc */
+.blessing-section {
+  margin-top: 50px;
+}
+
+.blessing-button {
+  background-color: #FF69B4;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.blessing-button:hover {
+  background-color: #FF1493;
+}
+
+/* Phong cách cho Pop-up hiển thị QR */
+.qr-popup {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.qr-popup-content {
+  background-color: #fff;
+  margin: 15% auto;
+  padding: 20px;
+  width: 90%;
+  max-width: 800px;
+  position: relative;
+  text-align: center;
+}
+
+.qr-popup-close {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.qr-popup-images {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+/* Căn chỉnh theo hàng dọc trên mobile */
+@media (max-width: 768px) {
+  .qr-popup-images {
+      grid-template-columns: 1fr;
+  }
+}
+
+.qr-popup-images img {
+  width: 100%;
+  max-width: 250px;
+}
+
+/* Phong cách cho thông tin chi tiết dưới QR */
+.account-info {
+  margin-top: 10px;
+  text-align: left;
+  font-size: 14px;
+}
+
+.account-info h4 {
+  margin: 10px 0 5px 0;
+  color: #FF69B4;
+}
+
+.hop-cuoi-title h2
+{
+font-family: 'Dancing Script',cursive;
+font-weight: bold;
+}
+
+/* Groom and Bride specific styling */
+.groom-section h3, .bride-section h3 {
+  font-size: 1.8em;
+  color: #333;
+  margin-bottom: 15px;
+  font-family: 'Playfair Display', serif;
+}
+
+.groom-section p, .bride-section p {
+  font-size: 1.1em;
+  color: #555;
+  margin-bottom: 10px;
+  font-family: 'Lora', serif;
+}
+
+/* Style for QR code images */
+.qr-code {
+  width: 200px;  /* Increase size of QR code */
+  height: 200px;
+  margin: 20px auto;
+  display: block;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Wedding border style with thicker dashed lines and irregular curves */
+.wedding-border {
+  padding: 25px;
+  border: 3px dashed #ccc; /* Độ dày đường viền */
+  border-radius: 15px 50px 15px 50px; /* Sử dụng border-radius không đều để tạo hiệu ứng cong */
+  background-color: #fff;
+  text-align: center;
+  position: relative;
+  margin: 20px;
+  background: url('./images/wedding-border-decor.png') no-repeat center;
+  background-size: contain; /* Điều chỉnh kích thước của trang trí */
+}
+
+/* Responsive layout */
+@media (max-width: 768px) {
+  .groom-section, .bride-section {
+      margin-bottom: 20px;
+  }
+
+  .qr-code {
+      width: 150px;  /* Giảm kích thước cho mobile */
+      height: 150px;
+  }
+}
+
+.wedding-border h3{
+  font-family: 'Dancing Script',cursive;
+}
+
+.wedding-border p{
+  font-family: "Work Sans", Arial, sans-serif;
+}
+
+
