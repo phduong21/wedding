@@ -46,6 +46,8 @@
 	<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&family=Roboto:wght@400;500&display=swap"
 		rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" rel="stylesheet" />
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
 
 
 	<link href="https://fonts.googleapis.com/css?family=Sacramento" rel="stylesheet">
@@ -76,6 +78,7 @@
 
 	<!-- Link to Font Awesome for icons -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
 </head>
 
 <body>
@@ -101,8 +104,15 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-xs-2">
-						<div id="fh5co-logo"><a href="index.html">Wedding<strong>.</strong></a></div>
+						<div id="fh5co-logo"><a href="index.html">Wedding.<strong>.</strong></a></div>
 					</div>
+					<!-- <div class="col-xs-2">
+						<div id="fh5co-logo">
+							<a href="index.html">
+								<img src="./images/logo.png" alt="Wedding Logo" style="max-width: 100%; height: auto;">
+							</a>
+						</div>
+					</div> -->
 					<div class="col-xs-10 text-right menu-1">
 						<ul>
 							<!-- <li class="active"><a href="index.html">Home</a></li> -->
@@ -516,46 +526,8 @@
 					<div class="row">
 						<div class="col-md-12 animate-box">
 							<div class="wrap-testimony">
-								<div class="owl-carousel-fullwidth">
-									<div class="item">
-										<div class="testimony-slide active text-center">
-											<figure>
-												<img src="images/couple-1.jpg" alt="user">
-											</figure>
-											<span>John Doe, via <a href="#" class="twitter">Twitter</a></span>
-											<blockquote>
-												<p>"Far far away, behind the word mountains, far from the countries
-													Vokalia and Consonantia, there live the blind texts. Separated they
-													live in Bookmarksgrove right at the coast of the Semantics"</p>
-											</blockquote>
-										</div>
-									</div>
-									<div class="item">
-										<div class="testimony-slide active text-center">
-											<figure>
-												<img src="images/couple-2.jpg" alt="user">
-											</figure>
-											<span>John Doe, via <a href="#" class="twitter">Twitter</a></span>
-											<blockquote>
-												<p>"Far far away, behind the word mountains, far from the countries
-													Vokalia and Consonantia, at the coast of the Semantics, a large
-													language ocean."</p>
-											</blockquote>
-										</div>
-									</div>
-									<div class="item">
-										<div class="testimony-slide active text-center">
-											<figure>
-												<img src="images/couple-3.jpg" alt="user">
-											</figure>
-											<span>John Doe, via <a href="#" class="twitter">Twitter</a></span>
-											<blockquote>
-												<p>"Far far away, far from the countries Vokalia and Consonantia, there
-													live the blind texts. Separated they live in Bookmarksgrove right at
-													the coast of the Semantics, a large language ocean."</p>
-											</blockquote>
-										</div>
-									</div>
+								<div class="owl-carousel-fullwidth" id="testimony-carousel">
+
 								</div>
 							</div>
 						</div>
@@ -587,7 +559,9 @@
 						<div class="col-md-6 col-sm-12 text-center groom-section">
 							<div class="wedding-border">
 								<h3>Đến Chú Rể</h3>
-								<img src="./images/QR-chure.png" alt="QR code chú rể" class="qr-code">
+								<a href="./images/QR-chure.png" data-lightbox="groom" data-title="QR code chú rể">
+									<img src="./images/QR-chure.png" alt="QR code chú rể" class="qr-code">
+								</a>
 								<p>Ngân hàng: TECHCOMBANK</p>
 								<p>Tên tài khoản: PHAM DUY ANH</p>
 								<p>Số tài khoản: 1903 2507 1377 76</p>
@@ -905,6 +879,74 @@
 				qrPopup.style.display = 'none';
 			}
 		});
+	</script>
+
+	<script>
+		fetch('https://script.google.com/macros/s/AKfycbzn1w9pmfBNmIQ_bfDtQSE3zWc4THhi_zRXzjyY3gXkrWVodHmjiNgDod4ngyBqKRnV/exec')
+			.then(res => res.json())
+			.then(data => {
+				const carousel = document.getElementById('testimony-carousel');
+				const contentArray = data.content.slice(1); // Bỏ hàng đầu tiên là tiêu đề
+
+				carousel.innerHTML = '';
+
+				// Duyệt qua từng item trong contentArray
+				contentArray.forEach(item => {
+					const [timestamp, name, message] = item;
+
+					// Tạo phần tử HTML tương ứng
+					const itemDiv = document.createElement('div');
+					itemDiv.classList.add('item');
+
+					const testimonyDiv = document.createElement('div');
+					testimonyDiv.classList.add('testimony-slide', 'active', 'text-center');
+
+					// Hình ảnh có thể tĩnh hoặc bạn có thể thay thế bằng một ảnh khác tùy theo ý muốn
+					const figure = document.createElement('figure');
+					const img = document.createElement('img');
+					img.src = 'images/couple-1.jpg'; // Đường dẫn ảnh, có thể thay đổi theo logic
+					img.alt = 'user';
+					figure.appendChild(img);
+
+					// Tạo thẻ tên
+					const nameSpan = document.createElement('span');
+					nameSpan.textContent = name;
+
+					// Tạo phần trích dẫn (message)
+					const blockquote = document.createElement('blockquote');
+					const p = document.createElement('p');
+					p.textContent = `"${message}"`;
+					blockquote.appendChild(p);
+
+					// Ghép các phần tử lại với nhau
+					testimonyDiv.appendChild(figure);
+					testimonyDiv.appendChild(nameSpan);
+					testimonyDiv.appendChild(blockquote);
+					itemDiv.appendChild(testimonyDiv);
+
+					// Thêm vào carousel
+					carousel.appendChild(itemDiv);
+				});
+
+				// Cập nhật lại Owl Carousel sau khi thêm item
+				const owl = $('.owl-carousel-fullwidth');
+
+				if (owl.hasClass('owl-loaded')) {
+					owl.trigger('destroy.owl.carousel');
+				}
+				owl.owlCarousel({
+					items: 1,
+					loop: true,
+					margin: 0,
+					responsiveClass: true,
+					nav: false,
+					dots: true,
+					smartSpeed: 800,
+					autoHeight: true
+				});
+			})
+			.catch(error => console.error('Error:', error));
+
 	</script>
 </body>
 
