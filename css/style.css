@@ -2260,4 +2260,19 @@ font-weight: bold;
   font-family: "Work Sans", Arial, sans-serif;
 }
 
+.wedding-cover{
+  background-position: center;
+  background-size: cover;
+  align-items: center;
+  height: 100vh; /* Adjust height as needed */
+}
+
+@media only screen and (max-width: 767px) {
+  .wedding-cover {
+    background-position: center;
+    background-size: cover;
+    height: 100vh; /* Adjust height for mobile if necessary */
+  }
+}
+
 
