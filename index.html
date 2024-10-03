@@ -160,8 +160,8 @@
 			</div>
 		</nav>
 
-		<header id="fh5co-header" class="fh5co-cover" style="background-image:url(images/wedding-img/AMV_7551-cut.webp)"
-			data-stellar-background-ratio="0.5">
+		<header id="fh5co-header" class="fh5co-cover header__image"
+			style="background-image:url(images/wedding-img/AMV_7551-cut.webp)" data-stellar-background-ratio="0.5">
 			<div class="overlay"></div>
 			<div class="container">
 				<div class="row">
@@ -247,8 +247,7 @@
 
 										</p>
 										<!-- TODO: Update location -->
-										<a href="https://maps.app.goo.gl/LKVrpFWxMCK4ePRL7" class="btn-map"
-											target="_blank">Xem bản đồ</a>
+										<a href="https://maps.app.goo.gl/LKVrpFWxMCK4ePRL7" class="btn-map" target="_blank">Xem bản đồ</a>
 									</div>
 								</div>
 								<div class="col-md-4 col-sm-6 text-center">
@@ -269,8 +268,7 @@
 										<p>Số 6, đường hồ Tai Trâu, phố Ngọc Lâm, Long Biên, Hà Nội</p>
 
 										</p>
-										<a href="https://maps.app.goo.gl/k7gLfhAnefpM1Mmi9" class="btn-map"
-											target="_blank">Xem bản đồ</a>
+										<a href="https://maps.app.goo.gl/k7gLfhAnefpM1Mmi9" class="btn-map" target="_blank">Xem bản đồ</a>
 									</div>
 								</div>
 								<div class="col-md-4 col-sm-6 text-center">
@@ -293,8 +291,7 @@
 										</p>
 
 										</p>
-										<a href="https://maps.app.goo.gl/rq5NA6hY1hhuTy6C6" class="btn-map"
-											target="_blank">Xem bản đồ</a>
+										<a href="https://maps.app.goo.gl/rq5NA6hY1hhuTy6C6" class="btn-map" target="_blank">Xem bản đồ</a>
 									</div>
 								</div>
 							</div>
@@ -572,32 +569,38 @@
 					</div>
 					<!-- Groom and Bride Boxes -->
 					<!-- Groom and Bride Sections -->
-					<div class="row">
-						<div class="col-md-6 col-sm-12 text-center groom-section">
-							<div class="wedding-border">
-								<h3>Đến Chú Rể</h3>
-								<a href="./images/QR-chure.png" data-lightbox="groom" data-title="QR code chú rể">
-									<img src="./images/QR-chure.png" alt="QR code chú rể" class="qr-code">
-								</a>
-								<p>Ngân hàng: TECHCOMBANK</p>
-								<p>Tên tài khoản: PHAM DUY ANH</p>
-								<p>Số tài khoản: 1903 2507 1377 76</p>
-							</div>
-						</div>
-
-						<div class="col-md-6 col-sm-12 text-center bride-section">
-							<div class="wedding-border">
-								<h3>Đến Cô Dâu</h3>
-								<img src="./images/QR-codau.png" alt="QR code cô dâu" class="qr-code">
-								<p>Ngân hàng: VIETCOMBANK</p>
-								<p>Tên tài khoản: PHAM LAN CHI</p>
-								<p>Số tài khoản: 1048 8974 05</p>
-							</div>
+					<div class="row"></div>
+					<div class="col-md-6 col-sm-12 text-center groom-section">
+						<div class="wedding-border">
+							<h3>Đến Chú Rể</h3>
+							<a href="./images/QR-chure.png" data-lightbox="groom" data-title="QR code chú rể">
+								<img src="./images/QR-chure.png" alt="QR code chú rể" class="qr-code">
+							</a>
+							<p>Ngân hàng: TECHCOMBANK</p>
+							<p>Tên tài khoản: PHAM DUY ANH</p>
+							<p id="groom-account-number" class="copyable" onclick="copyAccountNumber('groom-account-number')">
+								Số tài khoản: 1903 2507 1377 76
+								<span id="groom-icon"></span> <!-- Placeholder for the icon -->
+							</p>
 						</div>
 					</div>
-				</section>
 
-				<!-- <div class="row">
+					<div class="col-md-6 col-sm-12 text-center bride-section">
+						<div class="wedding-border">
+							<h3>Đến Cô Dâu</h3>
+							<img src="./images/QR-codau.png" alt="QR code cô dâu" class="qr-code">
+							<p>Ngân hàng: VIETCOMBANK</p>
+							<p>Tên tài khoản: PHAM LAN CHI</p>
+							<p id="bride-account-number" class="copyable" onclick="copyAccountNumber('bride-account-number')">
+								Số tài khoản: 1048 8974 05
+								<span id="bride-icon"></span> <!-- Placeholder for the icon -->
+							</p>
+						</div>
+					</div>
+			</div>
+			</section>
+
+			<!-- <div class="row">
 					<div class="col-md-6">
 						<div class="feature-left animate-box" data-animate-effect="fadeInLeft">
 							<span class="icon">
@@ -644,24 +647,24 @@
 				</div>
  -->
 
-			</div>
 		</div>
+	</div>
 
 
-		<div id="fh5co-started" class="fh5co-bg" style="background-image:url(images/img_bg_4.jpg);">
-			<!-- <div class="overlay"></div> -->
-			<div class="container">
-				<div class="row animate-box">
-					<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
-						<h2>Tham Gia Cùng Chúng Tôi</h2>
-						<p>Chúng tôi rất mong được chào đón bạn trong ngày đặc biệt này. Xin vui lòng xác nhận việc tham
-							dự lễ vow của bạn bằng cách điền vào mẫu dưới đây</p>
-					</div>
+	<div id="fh5co-started" class="fh5co-bg" style="background-image:url(images/img_bg_4.jpg);">
+		<!-- <div class="overlay"></div> -->
+		<div class="container">
+			<div class="row animate-box">
+				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
+					<h2>Tham Gia Cùng Chúng Tôi</h2>
+					<p>Chúng tôi rất mong được chào đón bạn trong ngày đặc biệt này. Xin vui lòng xác nhận việc tham
+						dự lễ vow của bạn bằng cách điền vào mẫu dưới đây</p>
 				</div>
-				<div class="row animate-box">
-					<div class="col-md-10 col-md-offset-1">
-						<form class="form-inline" onsubmit="return showSurvey();">
-							<!-- <div class="col-md-4 col-sm-4">
+			</div>
+			<div class="row animate-box">
+				<div class="col-md-10 col-md-offset-1">
+					<form class="form-inline" onsubmit="return showSurvey();">
+						<!-- <div class="col-md-4 col-sm-4">
 								<div class="form-group">
 									<label for="name" class="sr-only">Name</label>
 									<input type="name" class="form-control" id="name" placeholder="Name">
@@ -673,25 +676,25 @@
 									<input type="email" class="form-control" id="email" placeholder="Email">
 								</div>
 							</div> -->
-							<div class="col-md-12 col-sm-12">
-								<button type="submit" id="surveyButton" class="btn btn-default btn-block">Xác nhận tham
-									dự</button>
-							</div>
-						</form>
-					</div>
-				</div>
-				<div style="height: 48px"></div>
-
-				<!-- Hidden iframe initially -->
-				<div id="surveyIframe" style="display:none; margin-top: 20px;">
-					<iframe
-						src="https://docs.google.com/forms/d/e/1FAIpQLSeEVut1ZjEsg_wjA2VsLrO7QVovXImBSNRuBhDc1mbPyOd78g/viewform?embedded=true"
-						width="100%" height="990" frameborder="0" marginheight="0" marginwidth="0">Đang tải…</iframe>
+						<div class="col-md-12 col-sm-12">
+							<button type="submit" id="surveyButton" class="btn btn-default btn-block">Xác nhận tham
+								dự</button>
+						</div>
+					</form>
 				</div>
 			</div>
-		</div>
+			<div style="height: 48px"></div>
 
-		<!-- <footer id="fh5co-footer" role="contentinfo">
+			<!-- Hidden iframe initially -->
+			<div id="surveyIframe" style="display:none; margin-top: 20px;">
+				<iframe
+					src="https://docs.google.com/forms/d/e/1FAIpQLSeEVut1ZjEsg_wjA2VsLrO7QVovXImBSNRuBhDc1mbPyOd78g/viewform?embedded=true"
+					width="100%" height="990" frameborder="0" marginheight="0" marginwidth="0">Đang tải…</iframe>
+			</div>
+		</div>
+	</div>
+
+	<!-- <footer id="fh5co-footer" role="contentinfo">
 			<div class="container">
 
 				<div class="row copyright">
@@ -1314,6 +1317,27 @@
 		}
 
 		var main = setInterval(function () { update(frameDelay); }, frameDelay);
+	</script>
+	<script type="text/javascript">
+		function copyAccountNumber(elementId) {
+			const accountNumberElement = document.getElementById(elementId);
+			const accountNumber = accountNumberElement.innerText.split(": ")[1]; // Extract account number
+			const iconId = elementId === 'groom-account-number' ? 'groom-icon' : 'bride-icon';
+
+			navigator.clipboard.writeText(accountNumber).then(() => {
+				// Add a check icon after copying
+				const iconElement = document.getElementById(iconId);
+				iconElement.innerHTML = '<i class="icon-circle-check text-success"></i>'; // Add Bootstrap check icon
+
+				// Optionally, reset the icon after a delay (e.g., 3 seconds)
+				setTimeout(() => {
+					iconElement.innerHTML = ''; // Remove the icon after 3 seconds
+				}, 3000);
+
+			}).catch(err => {
+				console.error('Failed to copy: ', err);
+			});
+		}
 	</script>
 </body>
 
