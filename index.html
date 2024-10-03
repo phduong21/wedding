@@ -67,6 +67,7 @@
 
 	<!-- Theme style  -->
 	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/my-modal.css">
 
 	<!-- Modernizr JS -->
 	<script src="js/modernizr-2.6.2.min.js"></script>
@@ -121,7 +122,7 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-xs-2">
-						<div id="fh5co-logo"><a href="index.html">Wedding.<strong>.</strong></a></div>
+						<div id="fh5co-logo"><a href="index.html">Wedding<strong>.</strong></a></div>
 					</div>
 					<!-- <div class="col-xs-2">
 						<div id="fh5co-logo">
@@ -374,20 +375,19 @@
 					<div class="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box">
 						<span>Our Memories</span>
 						<h2>Wedding Gallery</h2>
-						<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,
-							there live the blind texts.</p>
+						<p>Những bức ảnh này là những khoảnh khắc đẹp nhất trong ngày đặc biệt của chúng tôi, nơi tình
+							yêu và hạnh phúc được ghi dấu mãi mãi.</p>
 					</div>
 				</div>
 				<div class="row row-bottom-padded-md">
 					<div class="col-md-12">
-						<ul id="fh5co-gallery-list">
-
+						<!-- <ul id="fh5co-gallery-list">
 							<li class="one-third animate-box" data-animate-effect="fadeIn"
 								style="background-image: url(images/gallery-1.jpg); ">
 								<a href="images/gallery-1.jpg">
 									<div class="case-studies-summary">
-										<span>14 Photos</span>
-										<h2>Two Glas of Juice</h2>
+										<span>10 Photos</span>
+										<h2>Collection 1</h2>
 									</div>
 								</a>
 							</li>
@@ -395,8 +395,8 @@
 								style="background-image: url(images/gallery-2.jpg); ">
 								<a href="#" class="color-2">
 									<div class="case-studies-summary">
-										<span>30 Photos</span>
-										<h2>Timer starts now!</h2>
+										<span>10 Photos</span>
+										<h2>Collection 2</h2>
 									</div>
 								</a>
 							</li>
@@ -406,75 +406,179 @@
 								style="background-image: url(images/gallery-3.jpg); ">
 								<a href="#" class="color-3">
 									<div class="case-studies-summary">
-										<span>90 Photos</span>
-										<h2>Beautiful sunset</h2>
+										<span>10 Photos</span>
+										<h2>Collection 3</h2>
+									</div>
+								</a>
+							</li>
+						</ul> -->
+						<ul id="fh5co-gallery-list">
+							<li class="one-third animate-box" data-animate-effect="fadeIn"
+								style="background-image: url(images/gallery-1.jpg);">
+								<a href="#album1-modal">
+									<div class="case-studies-summary">
+										<span>9 Photos</span>
+										<h2>Collection 1</h2>
 									</div>
 								</a>
 							</li>
 							<li class="one-third animate-box" data-animate-effect="fadeIn"
-								style="background-image: url(images/gallery-4.jpg); ">
-								<a href="#" class="color-4">
+								style="background-image: url(images/gallery-2.jpg);">
+								<a href="#album2-modal">
 									<div class="case-studies-summary">
-										<span>12 Photos</span>
-										<h2>Company's Conference Room</h2>
-									</div>
-								</a>
-							</li>
-
-							<li class="one-third animate-box" data-animate-effect="fadeIn"
-								style="background-image: url(images/gallery-5.jpg); ">
-								<a href="#" class="color-3">
-									<div class="case-studies-summary">
-										<span>50 Photos</span>
-										<h2>Useful baskets</h2>
+										<span>9 Photos</span>
+										<h2>Collection 2</h2>
 									</div>
 								</a>
 							</li>
 							<li class="one-third animate-box" data-animate-effect="fadeIn"
-								style="background-image: url(images/gallery-6.jpg); ">
-								<a href="#" class="color-4">
+								style="background-image: url(images/gallery-3.jpg);">
+								<a href="#album3-modal">
 									<div class="case-studies-summary">
-										<span>45 Photos</span>
-										<h2>Skater man in the road</h2>
-									</div>
-								</a>
-							</li>
-
-							<li class="one-third animate-box" data-animate-effect="fadeIn"
-								style="background-image: url(images/gallery-7.jpg); ">
-								<a href="#" class="color-4">
-									<div class="case-studies-summary">
-										<span>35 Photos</span>
-										<h2>Two Glas of Juice</h2>
-									</div>
-								</a>
-							</li>
-
-							<li class="one-third animate-box" data-animate-effect="fadeIn"
-								style="background-image: url(images/gallery-8.jpg); ">
-								<a href="#" class="color-5">
-									<div class="case-studies-summary">
-										<span>90 Photos</span>
-										<h2>Timer starts now!</h2>
-									</div>
-								</a>
-							</li>
-							<li class="one-third animate-box" data-animate-effect="fadeIn"
-								style="background-image: url(images/gallery-9.jpg); ">
-								<a href="#" class="color-6">
-									<div class="case-studies-summary">
-										<span>56 Photos</span>
-										<h2>Beautiful sunset</h2>
+										<span>9 Photos</span>
+										<h2>Collection 3</h2>
 									</div>
 								</a>
 							</li>
 						</ul>
+
+
 					</div>
 				</div>
 			</div>
 		</div>
+		<!-- Modal cho Album 1 -->
+		<div id="album1-modal" class="gallery-modal">
+			<span class="close-modal">&times;</span>
+			<div class="modal-content">
+				<div class="slides">
+					<img src="images/wedding-img/AMV_8546.webp" style="width:100%">
+				</div>
+				<div class="slides">
+					<img src="images/wedding-img/AMV_8541.webp" style="width:100%">
+				</div>
+				<div class="slides">
+					<img src="images/wedding-img/AMV_7786.webp" style="width:100%">
+				</div>
+				<div class="slides">
+					<img src="images/wedding-img/ld_06771.webp" style="width:100%">
+				</div>
+				<div class="slides">
+					<img src="images/wedding-img/ld_06633.webp" style="width:100%">
+				</div>
+				<div class="slides">
+					<img src="images/wedding-img/ld_07007.webp" style="width:100%">
+				</div>
+				<div class="slides">
+					<img src="images/wedding-img/ld_06302.webp" style="width:100%">
+				</div>
+				<div class="slides">
+					<img src="images/wedding-img/AMV_7551.webp" style="width:100%">
+				</div>
+				<div class="slides">
+					<img src="images/wedding-img/ld_06355.webp" style="width:100%">
+				</div>
+				<div class="slides">
+					<img src="images/wedding-img/AMV_8279.webp" style="width:100%">
+				</div>
+				<!-- Thêm các ảnh khác vào đây -->
+				<a class="prev-slide" onclick="plusSlides(-1)">&#10094;</a>
+				<a class="next-slide" onclick="plusSlides(1)">&#10095;</a>
 
-		<div id="fh5co-counter" class="fh5co-bg fh5co-counter" style="background-image:url(images/img_bg_5.jpg);">
+				<!-- Danh sách preview dưới đây -->
+				<!-- <div class="preview-gallery">
+					<img class="preview-thumbnail" src="images/wedding-img/AMV_7399.webp" onclick="currentSlide(1)">
+					<img class="preview-thumbnail" src="images/wedding-img/AMV_7551.webp" onclick="currentSlide(2)">
+					<img class="preview-thumbnail" src="images/wedding-img/AMV_7671.webp" onclick="currentSlide(3)">
+					<img class="preview-thumbnail" src="images/album1/photo4.jpg" onclick="currentSlide(4)">
+					<img class="preview-thumbnail" src="images/album1/photo5.jpg" onclick="currentSlide(5)">
+					<img class="preview-thumbnail" src="images/album1/photo6.jpg" onclick="currentSlide(6)">
+					<img class="preview-thumbnail" src="images/album1/photo7.jpg" onclick="currentSlide(7)">
+					<img class="preview-thumbnail" src="images/album1/photo8.jpg" onclick="currentSlide(8)">
+					<img class="preview-thumbnail" src="images/album1/photo9.jpg" onclick="currentSlide(9)">
+				</div> -->
+			</div>
+		</div>
+
+		<!-- Modal cho Album 2 -->
+		<div id="album2-modal" class="gallery-modal">
+			<span class="close-modal">&times;</span>
+			<div class="modal-content">
+				<div class="slides">
+					<img src="images/wedding-img/ld_06437_1.webp" style="width:100%">
+				</div>
+				<div class="slides">
+					<img src="images/wedding-img/ld_06369.webp" style="width:100%">
+				</div>
+				<div class="slides">
+					<img src="images/wedding-img/ld_07388.webp" style="width:100%">
+				</div>
+				<div class="slides">
+					<img src="images/wedding-img/ld_07650.webp" style="width:100%">
+				</div>
+				<div class="slides">
+					<img src="images/wedding-img/ld_06699.webp" style="width:100%">
+				</div>
+				<div class="slides">
+					<img src="images/wedding-img/ld_06048.webp" style="width:100%">
+				</div>
+				<div class="slides">
+					<img src="images/wedding-img/ld_07301.webp" style="width:100%">
+				</div>
+				<div class="slides">
+					<img src="images/wedding-img/ld_07411.webp" style="width:100%">
+				</div>
+				<div class="slides">
+					<img src="images/wedding-img/ld_06537.webp" style="width:100%">
+				</div>
+				<div class="slides">
+					<img src="images/wedding-img/ld_06500_1.webp" style="width:100%">
+				</div>
+				<a class="prev-slide" onclick="plusSlides(-1)">&#10094;</a>
+				<a class="next-slide" onclick="plusSlides(1)">&#10095;</a>
+			</div>
+		</div>
+
+		<!-- Modal cho Album 3 -->
+		<div id="album3-modal" class="gallery-modal">
+			<span class="close-modal">&times;</span>
+			<div class="modal-content">
+				<div class="slides">
+					<img src="images/wedding-img/ld_06141.webp" style="width:100%">
+				</div>
+				<div class="slides">
+					<img src="images/wedding-img/ld_07313.webp" style="width:100%">
+				</div>
+				<div class="slides">
+					<img src="images/wedding-img/ld_06325.webp" style="width:100%">
+				</div>
+				<div class="slides">
+					<img src="images/wedding-img/AMV_7335.webp" style="width:100%">
+				</div>
+				<div class="slides">
+					<img src="images/wedding-img/ld_07239.webp" style="width:100%">
+				</div>
+				<div class="slides">
+					<img src="images/wedding-img/ld_06429.webp" style="width:100%">
+				</div>
+				<div class="slides">
+					<img src="images/wedding-img/ld_06403.webp" style="width:100%">
+				</div>
+				<div class="slides">
+					<img src="images/wedding-img/AMV_7671.webp" style="width:100%">
+				</div>
+				<div class="slides">
+					<img src="images/wedding-img/ld_06490_1.webp" style="width:100%">
+				</div>
+				<div class="slides">
+					<img src="images/wedding-img/AMV_7399.webp" style="width:100%">
+				</div>
+				<a class="prev-slide" onclick="plusSlides(-1)">&#10094;</a>
+				<a class="next-slide" onclick="plusSlides(1)">&#10095;</a>
+			</div>
+		</div>
+
+		<!-- <div id="fh5co-counter" class="fh5co-bg fh5co-counter" style="background-image:url(images/img_bg_5.jpg);">
 			<div class="overlay"></div>
 			<div class="container">
 				<div class="row">
@@ -529,7 +633,7 @@
 					</div>
 				</div>
 			</div>
-		</div>
+		</div> -->
 
 		<div id="fh5co-testimonial">
 			<div class="container">
@@ -538,6 +642,8 @@
 						<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
 							<span>Best Wishes</span>
 							<h2>Friends Wishes</h2>
+							<p>Cảm ơn bạn rất nhiều vì đã gửi những lời chúc mừng tốt đẹp nhất đến đám cưới của chúng
+								tôi!</p>
 						</div>
 					</div>
 					<div class="row">
@@ -551,7 +657,8 @@
 					</div>
 					<div class="btn-wishes-wrapper animate-box">
 						<a href="https://docs.google.com/forms/d/e/1FAIpQLSc_wR5TampJsadTYMkHG03UKWxmuG1J1ZaRduGc1f7Ou7vCTA/viewform"
-							target="_blank">Gửi Lời Chúc ❤</a>
+							target="_blank" style="font-family:Dancing Script, cursive; font-size: 30px;">Gửi Lời Chúc
+							❤</a>
 					</div>
 				</div>
 			</div>
@@ -699,6 +806,18 @@
 		</div>
 	</div>
 
+	<!-- <div id="thank-you" class="fh5co-bg fh5co-counter">
+		<div class=" container">
+			<div class="row">
+				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box">
+					<br><br>
+					<h2>Thank You!</h2>
+					<h3 style="font-family:Dancing Script, cursive; font-size: 40px;">Duy Anh & Lan Chi</h3>
+				</div>
+			</div>
+		</div>
+	</div> -->
+
 	<!-- <footer id="fh5co-footer" role="contentinfo">
 			<div class="container">
 
@@ -737,8 +856,7 @@
 			<i class="fas fa-comment"></i>
 			<span>Gửi Lời Chúc</span> <!-- Text cho nút gửi lời chúc -->
 		</a>
-		<a href="https://docs.google.com/forms/d/e/1FAIpQLSeEVut1ZjEsg_wjA2VsLrO7QVovXImBSNRuBhDc1mbPyOd78g/viewform?embedded=true"
-			target="_blank">
+		<a href="#fh5co-started">
 			<i class="fas fa-envelope-open-text"></i>
 			<span>Xác Nhận Tham Dự</span> <!-- Text cho nút xác nhận tham dự -->
 		</a>
@@ -1344,6 +1462,115 @@
 			});
 		}
 	</script>
+
+	<script>
+		// Hiển thị modal khi nhấp vào thumbnail
+		var galleryModals = document.querySelectorAll(".gallery-modal");
+		var galleryLinks = document.querySelectorAll("#fh5co-gallery-list a");
+
+		galleryLinks.forEach((link, index) => {
+			link.onclick = function () {
+				// Đặt slideIndex về 1 mỗi khi mở modal
+				slideIndex = 1;
+				showSlides(slideIndex);
+				galleryModals[index].style.display = "block";
+			};
+		});
+
+		// Đóng modal khi nhấp vào nút đóng
+		var closeModal = document.querySelectorAll(".close-modal");
+		closeModal.forEach((btn, index) => {
+			btn.onclick = function () {
+				galleryModals[index].style.display = "none";
+			};
+		});
+
+		// Slideshow cho từng album
+		var slideIndex = 1;
+		showSlides(slideIndex);
+
+		function plusSlides(n) {
+			showSlides(slideIndex += n);
+		}
+
+		function showSlides(n) {
+			var i;
+			var slides = document.querySelectorAll(".slides");
+			if (n > slides.length) { slideIndex = 1 }
+			if (n < 1) { slideIndex = slides.length }
+			for (i = 0; i < slides.length; i++) {
+				slides[i].style.display = "none";
+			}
+			slides[slideIndex - 1].style.display = "block";
+		}
+		// Hiển thị modal khi nhấp vào thumbnail
+		var galleryModals = document.querySelectorAll(".gallery-modal");
+		var galleryLinks = document.querySelectorAll("#fh5co-gallery-list a");
+
+		galleryLinks.forEach((link, index) => {
+			link.onclick = function () {
+				// Đặt slideIndex về 1 mỗi khi mở modal
+				slideIndex = 1;
+				showSlides(slideIndex);
+				galleryModals[index].style.display = "block";
+			};
+		});
+
+		// Đóng modal khi nhấp vào nút đóng
+		var closeModal = document.querySelectorAll(".close-modal");
+		closeModal.forEach((btn, index) => {
+			btn.onclick = function () {
+				galleryModals[index].style.display = "none";
+			};
+		});
+
+		// Slideshow cho từng album
+		var slideIndex = 1;
+		showSlides(slideIndex);
+
+		function plusSlides(n) {
+			showSlides(slideIndex += n);
+		}
+
+		function showSlides(n) {
+			var i;
+			var slides = document.querySelectorAll(".slides");
+			if (n > slides.length) { slideIndex = 1 }
+			if (n < 1) { slideIndex = slides.length }
+			for (i = 0; i < slides.length; i++) {
+				slides[i].style.display = "none";
+			}
+			slides[slideIndex - 1].style.display = "block";
+		}
+
+	</script>
+
+	<!-- <script>
+		function currentSlide(n) {
+			let slideIndex = 1;
+
+			function showSlides(n) {
+				const slides = document.getElementsByClassName("slides");
+				const thumbnails = document.getElementsByClassName("preview-thumbnail");
+
+				if (n > slides.length) { slideIndex = 1 }
+				if (n < 1) { slideIndex = slides.length }
+
+				for (let i = 0; i < slides.length; i++) {
+					slides[i].style.display = "none";
+					thumbnails[i].classList.remove("active"); // Xóa class active khỏi tất cả thumbnail
+				}
+
+				slides[slideIndex - 1].style.display = "block";
+				thumbnails[slideIndex - 1].classList.add("active"); // Thêm class active vào thumbnail hiện tại
+			}
+
+			function currentSlide(n) {
+				showSlides(slideIndex = n);
+			}
+
+		}
+	</script> -->
 </body>
 
 </html>
