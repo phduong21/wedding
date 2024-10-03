@@ -2062,23 +2062,23 @@ form label {
 
 @media only screen and (max-width: 600px) {
   .floating-button {
-      bottom: 15px;
-      right: 15px;
-      font-size: 16px;
-      width: 59px; /* Kích thước mới */
-      height: 56px; /* Kích thước mới */
+    bottom: 15px;
+    right: 15px;
+    font-size: 16px;
+    width: 59px; /* Kích thước mới */
+    height: 56px; /* Kích thước mới */
   }
 
   .menu-buttons {
-      bottom: 75px; /* Điều chỉnh lại khoảng cách */
-      right: 15px;
+    bottom: 75px; /* Điều chỉnh lại khoảng cách */
+    right: 15px;
   }
 
   .menu-buttons a {
-      width: 59px; /* Kích thước mới cho mobile */
-      height: 56px; /* Kích thước mới cho mobile */
-      font-size: 18px;
-      margin: 10px 0; /* Khoảng cách giữa các nút trên mobile */
+    width: 59px; /* Kích thước mới cho mobile */
+    height: 56px; /* Kích thước mới cho mobile */
+    font-size: 18px;
+    margin: 10px 0; /* Khoảng cách giữa các nút trên mobile */
   }
 }
 
@@ -2098,10 +2098,10 @@ form label {
 
 .wedding-menu-buttons a {
   font-size: 20px;
-  color: #FF69B4;
+  color: #ff69b4;
   text-decoration: none;
   padding: 10px 20px;
-  border: 2px solid #FF69B4;
+  border: 2px solid #ff69b4;
   border-radius: 8px;
   display: inline-flex;
   align-items: center;
@@ -2110,7 +2110,7 @@ form label {
 }
 
 .wedding-menu-buttons a:hover {
-  background-color: #FF69B4;
+  background-color: #ff69b4;
   color: white;
 }
 
@@ -2124,7 +2124,7 @@ form label {
 }
 
 .blessing-button {
-  background-color: #FF69B4;
+  background-color: #ff69b4;
   color: white;
   padding: 10px 20px;
   border: none;
@@ -2133,7 +2133,7 @@ form label {
 }
 
 .blessing-button:hover {
-  background-color: #FF1493;
+  background-color: #ff1493;
 }
 
 /* Phong cách cho Pop-up hiển thị QR */
@@ -2175,7 +2175,7 @@ form label {
 /* Căn chỉnh theo hàng dọc trên mobile */
 @media (max-width: 768px) {
   .qr-popup-images {
-      grid-template-columns: 1fr;
+    grid-template-columns: 1fr;
   }
 }
 
@@ -2193,33 +2193,34 @@ form label {
 
 .account-info h4 {
   margin: 10px 0 5px 0;
-  color: #FF69B4;
+  color: #ff69b4;
 }
 
-.hop-cuoi-title h2
-{
-font-family: 'Dancing Script',cursive;
-font-weight: bold;
+.hop-cuoi-title h2 {
+  font-family: "Dancing Script", cursive;
+  font-weight: bold;
 }
 
 /* Groom and Bride specific styling */
-.groom-section h3, .bride-section h3 {
+.groom-section h3,
+.bride-section h3 {
   font-size: 1.8em;
   color: #333;
   margin-bottom: 15px;
-  font-family: 'Playfair Display', serif;
+  font-family: "Playfair Display", serif;
 }
 
-.groom-section p, .bride-section p {
+.groom-section p,
+.bride-section p {
   font-size: 1.1em;
   color: #555;
   margin-bottom: 10px;
-  font-family: 'Lora', serif;
+  font-family: "Lora", serif;
 }
 
 /* Style for QR code images */
 .qr-code {
-  width: 200px;  /* Increase size of QR code */
+  width: 200px; /* Increase size of QR code */
   height: 200px;
   margin: 20px auto;
   display: block;
@@ -2236,28 +2237,46 @@ font-weight: bold;
   text-align: center;
   position: relative;
   margin: 20px;
-  background: url('./images/wedding-border-decor.png') no-repeat center;
+  background: url("./images/wedding-border-decor.png") no-repeat center;
   background-size: contain; /* Điều chỉnh kích thước của trang trí */
 }
 
 /* Responsive layout */
 @media (max-width: 768px) {
-  .groom-section, .bride-section {
-      margin-bottom: 20px;
+  .groom-section,
+  .bride-section {
+    margin-bottom: 20px;
   }
 
   .qr-code {
-      width: 150px;  /* Giảm kích thước cho mobile */
-      height: 150px;
+    width: 150px; /* Giảm kích thước cho mobile */
+    height: 150px;
   }
 }
 
-.wedding-border h3{
-  font-family: 'Dancing Script',cursive;
+.wedding-border h3 {
+  font-family: "Dancing Script", cursive;
 }
 
-.wedding-border p{
+.wedding-border p {
   font-family: "Work Sans", Arial, sans-serif;
 }
 
+.wedding-cover {
+  background-position: center;
+  background-size: cover;
+  align-items: center;
+  height: 100vh; /* Adjust height as needed */
+}
 
+@media only screen and (max-width: 767px) {
+  .wedding-cover {
+    background-position: center;
+    background-size: cover;
+    height: 100vh; /* Adjust height for mobile if necessary */
+  }
+}
+
+.header__image {
+  background-position: center !important;
+}
