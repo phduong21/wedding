@@ -51,7 +51,7 @@ body {
 }
 
 a {
-  color: #f14e95;
+  color: #b48418;
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
@@ -59,7 +59,7 @@ a {
 a:hover,
 a:active,
 a:focus {
-  color: #f14e95;
+  color: #b48418;
   outline: none;
   text-decoration: none;
 }
@@ -83,17 +83,17 @@ figure {
 
 ::-webkit-selection {
   color: #fff;
-  background: #f14e95;
+  background: #b48418;
 }
 
 ::-moz-selection {
   color: #fff;
-  background: #f14e95;
+  background: #b48418;
 }
 
 ::selection {
   color: #fff;
-  background: #f14e95;
+  background: #b48418;
 }
 
 .fh5co-nav {
@@ -212,7 +212,7 @@ figure {
   color: #fff;
 }
 .fh5co-nav ul li.btn-cta a {
-  color: #f14e95;
+  color: #b48418;
 }
 .fh5co-nav ul li.btn-cta a span {
   background: #fff;
@@ -786,7 +786,7 @@ figure {
   display: inline-block;
   zoom: 1;
   *display: inline;
-  color: #f14e95;
+  color: #b48418;
   padding-left: 10px;
   padding-right: 10px;
 }
@@ -805,7 +805,7 @@ figure {
   position: relative;
 }
 .fh5co-contact-info ul li:before {
-  color: #f14e95;
+  color: #b48418;
   position: absolute;
   left: 0;
   top: 0.05em;
@@ -876,7 +876,7 @@ form label {
   #fh5co-header .display-tc h1,
   #fh5co-counter .display-tc h1,
   .fh5co-cover .display-tc h1 {
-    font-size: 30px;
+    font-size: 33px;
   }
 }
 #fh5co-header .display-tc h2,
@@ -898,7 +898,7 @@ form label {
 .fh5co-cover .display-tc .btn {
   padding: 15px 20px;
   background: #fff !important;
-  color: #f14e95;
+  color: #b48418;
   border: none !important;
   font-size: 14px;
   text-transform: uppercase;
@@ -961,7 +961,7 @@ form label {
   display: inline-block;
   width: 100px;
   height: 100px;
-  background: rgba(241, 78, 149, 0.8);
+  background: #b48418;
   margin: 0 4px;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
@@ -1067,7 +1067,7 @@ form label {
   font-size: 20px;
   background: #fff;
   padding: 20px;
-  color: #f14e95;
+  color: #b48418;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
@@ -1090,7 +1090,7 @@ form label {
 }
 .couple-half h3 {
   font-family: "Sacramento", Arial, serif;
-  color: #f14e95;
+  color: #b48418;
   font-size: 30px;
 }
 .couple-half .groom,
@@ -1188,7 +1188,7 @@ form label {
   height: 90px;
   font-size: 40px;
   line-height: 40px;
-  color: #f14e95;
+  color: #b48418;
 }
 .feature-center p,
 .feature-center h3 {
@@ -1211,7 +1211,7 @@ form label {
   margin-bottom: 10px;
   line-height: 1.5;
   font-weight: bold;
-  color: #f14e95;
+  color: #b48418;
   font-family: "Sacramento", Arial, serif;
 }
 @media screen and (max-width: 768px) {
@@ -1246,7 +1246,7 @@ form label {
   display: block;
 }
 #fh5co-testimonial .wrap-testimony .testimony-slide span a.twitter {
-  color: #f14e95;
+  color: #b48418;
   font-weight: 300;
 }
 #fh5co-testimonial .wrap-testimony .testimony-slide figure {
@@ -1340,7 +1340,7 @@ form label {
   display: table-cell;
   vertical-align: middle;
   font-size: 30px;
-  color: #f14e95;
+  color: #b48418;
 }
 .feature-left .feature-copy {
   float: left;
@@ -1406,7 +1406,7 @@ form label {
 #fh5co-started .btn {
   height: 54px;
   border: none !important;
-  background: #f14e95;
+  background: #b48418;
   color: #fff;
   font-size: 16px;
   text-transform: uppercase;
@@ -1452,7 +1452,7 @@ form label {
 }
 .owl-carousel .owl-controls .owl-dot.active span {
   background: transparent;
-  border: 2px solid #f14e95;
+  border: 2px solid #b48418;
 }
 
 #fh5co-offcanvas {
@@ -1714,9 +1714,9 @@ form label {
 }
 
 .btn-primary {
-  background: #f14e95;
+  background: #b48418;
   color: #fff;
-  border: 2px solid #f14e95;
+  border: 2px solid #b48418;
 }
 .btn-primary:hover,
 .btn-primary:focus,
@@ -1726,13 +1726,13 @@ form label {
 }
 .btn-primary.btn-outline {
   background: transparent;
-  color: #f14e95;
-  border: 2px solid #f14e95;
+  color: #b48418;
+  border: 2px solid #b48418;
 }
 .btn-primary.btn-outline:hover,
 .btn-primary.btn-outline:focus,
 .btn-primary.btn-outline:active {
-  background: #f14e95;
+  background: #b48418;
   color: #fff;
 }
 
@@ -1881,7 +1881,7 @@ form label {
 .form-control:focus {
   outline: none;
   box-shadow: none;
-  border-color: #f14e95;
+  border-color: #b48418;
 }
 
 .row-pb-md {
@@ -1910,7 +1910,7 @@ form label {
   display: inline-block;
   padding: 10px 20px; /* Kích thước nút */
   background-color: #d6dce3; /* Màu nền */
-  color: #f14e95; /* Màu chữ */
+  color: #b48418; /* Màu chữ */
   border: none; /* Không có đường viền */
   font-size: large;
   border-radius: 25px; /* Bo tròn */
@@ -1920,7 +1920,7 @@ form label {
 }
 
 .btn-map:hover {
-  background-color: #f14e95; /* Màu nền khi hover */
+  background-color: #b48418; /* Màu nền khi hover */
   color: #d6dce3;
 }
 /*# sourceMappingURL=style.css.map */
@@ -1933,7 +1933,7 @@ form label {
 
 .btn-wishes-wrapper a {
   padding: 1.5rem;
-  border: 1px solid #f14e95;
+  border: 1px solid #b48418;
   border-radius: 16px;
   font-size: 20px;
   line-height: 1.6em;
@@ -1941,16 +1941,16 @@ form label {
 
 .btn-wishes-wrapper a:hover {
   color: white;
-  background: #f14e95;
+  background: #b48418;
 }
 
 .music-button {
   z-index: 100;
   position: fixed;
-  bottom: 20px;
+  bottom: 15px;
   left: 20px;
   padding: 16px;
-  background-color: #f14e95;
+  background-color: #b48418;
   color: white;
   border: none;
   cursor: pointer;
@@ -1967,7 +1967,7 @@ form label {
   bottom: 85px;
   left: 20px;
   padding: 16px;
-  background-color: #f14e95;
+  background-color: #b48418;
   color: white;
   border: none;
   cursor: pointer;
@@ -1982,7 +1982,7 @@ form label {
   position: fixed;
   bottom: 20px;
   right: 20px;
-  background-color: #f14e95; /* Màu mới */
+  background-color: #b48418; /* Màu mới */
   border: none;
   color: white;
   border-radius: 50%;
@@ -2005,14 +2005,14 @@ form label {
   position: fixed;
   bottom: 90px; /* Điều chỉnh lại bottom */
   right: 20px;
-  display: flex;
+  display: none;
   flex-direction: column;
   align-items: center;
   pointer-events: none; /* Ngăn các nút bị click khi đóng */
 }
 
 .menu-buttons a {
-  background-color: #f14e95; /* Màu mới */
+  background-color: #b48418; /* Màu mới */
   border: none;
   color: white;
   border-radius: 50%;
@@ -2024,7 +2024,7 @@ form label {
   justify-content: center;
   align-items: center;
   position: relative; /* Để định vị text */
-  opacity: 0;
+  opacity: ;
   transform: translateY(100px); /* Hiệu ứng chuyển động */
   transition: transform 0.3s ease, opacity 0.3s ease;
   margin: 10px 0; /* Khoảng cách giữa các nút */
@@ -2035,6 +2035,9 @@ form label {
   pointer-events: auto;
   opacity: 1;
   transform: translateY(0);
+  display: flex; /* Hoặc inline-flex nếu bạn muốn các nút theo hàng ngang */
+  flex-direction: column; /* Để các nút xếp thành cột */
+  gap: 10px; /* Khoảng cách giữa các nút */
 }
 
 .menu-buttons a span {
@@ -2042,7 +2045,7 @@ form label {
   top: 50%; /* Giữa theo chiều dọc */
   right: 65px; /* Khoảng cách bên phải nút */
   transform: translateY(-50%); /* Căn giữa theo chiều dọc */
-  background: #f14e95;
+  background: #b48418;
   color: white;
   padding: 5px 10px;
   border-radius: 5px;

@@ -99,23 +99,14 @@
 </head>
 
 <body>
-	<canvas id="canvas">Canvas is not supported in your browser or you don't have enabled Javascripts.</canvas>
-	<!-- Button with mute icon by default -->
+	<canvas id="canvas"></canvas>
+
 	<button class="music-button" onclick="toggleMusic()">
-		<i id="musicIcon" class="fas fa-volume-mute"></i> <!-- Default mute icon -->
+		<i id="musicIcon" class="fas fa-volume-up"></i> <!-- Default volume up icon -->
 	</button>
-	<!-- 
-	<button id="123" class="money-button">
-		<i class="fa-solid fa-sack-dollar"></i> -->
-	<!-- <img src="./images/sack-dollar-solid.png" alt="123" width="27px" , height="27px">
-	<i id="musicIcon" class="fa-solid fa-sack-dollar"></i>
-		<i class="fa-solid fa-money-bill"></i> -->
-	<!-- </button> -->
 
-
-	<!-- Audio element -->
-	<audio id="audioPlayer" src="./ToTheMoon-hooligan.mp3"></audio>
-
+	<!-- Audio element with autoplay -->
+	<audio id="audioPlayer" src="./ToTheMoon-hooligan.mp3" autoplay></audio>
 
 	<div id="page">
 		<nav class="fh5co-nav" role="navigation">
@@ -788,19 +779,22 @@
 			<span>Mừng Cưới</span>
 		</a>
 	</div>
-	<button class="floating-button" id="mainButton"><i class="fas fa-bars"></i></button>
+	<button class="floating-button" id="mainButton"><i class="fas fa-times"></i></button>
 	<script>
 		const mainButton = document.getElementById('mainButton');
 		const menuButtons = document.getElementById('menuButtons');
 		const mainButtonIcon = mainButton.querySelector('i'); // Lấy icon của nút chính
 
-		let isOpen = false;
-
+		let isOpen = true;
+		menuButtons.classList.add('show');
+		mainButton.classList.add('active');
+		mainButtonIcon.classList.remove('fa-bars'); // Đổi icon từ hamburger sang dấu X
+		mainButtonIcon.classList.add('fa-times');
 		mainButton.addEventListener('click', () => {
 			isOpen = !isOpen;
 			if (isOpen) {
-				menuButtons.classList.add('show');  // Hiển thị các nút
-				mainButton.classList.add('active');  // Thêm lớp active cho hiệu ứng nút chính
+				menuButtons.classList.add('show');
+				mainButton.classList.add('active');
 				mainButtonIcon.classList.remove('fa-bars'); // Đổi icon từ hamburger sang dấu X
 				mainButtonIcon.classList.add('fa-times');
 			} else {
@@ -868,21 +862,45 @@
 	</script>
 
 	<script>
+		// Function to toggle the audio play/pause state
 		function toggleMusic() {
 			var audio = document.getElementById("audioPlayer");
 			var icon = document.getElementById("musicIcon");
 
-			// Toggle between playing and pausing
-			if (audio.paused) {
-				audio.play();
-				icon.classList.remove("fa-volume-mute"); // Remove mute icon
-				icon.classList.add("fa-volume-up"); // Add speaker icon
+			// Check if audio is playing
+			if (!audio.paused) {
+				audio.pause(); // If it's playing, pause it
+				icon.classList.remove("fa-volume-up");
+				icon.classList.add("fa-volume-mute"); // Change icon to mute
 			} else {
-				audio.pause();
-				icon.classList.remove("fa-volume-up"); // Remove speaker icon
-				icon.classList.add("fa-volume-mute"); // Add mute icon
+				audio.play(); // If it's paused, play it
+				icon.classList.remove("fa-volume-mute");
+				icon.classList.add("fa-volume-up"); // Change icon to volume up
 			}
 		}
+
+		// Ensure the audio plays automatically when the page loads
+		window.onload = function () {
+			var audio = document.getElementById("audioPlayer");
+			var icon = document.getElementById("musicIcon");
+
+			// Attempt to play the audio (autoplay might be blocked)
+			var playPromise = audio.play();
+
+			// Check if autoplay was successful
+			if (playPromise !== undefined) {
+				playPromise.then(function () {
+					// Autoplay started successfully
+					icon.classList.remove("fa-volume-mute");
+					icon.classList.add("fa-volume-up");
+				}).catch(function (error) {
+					// Autoplay was blocked, set icon to mute state
+					icon.classList.remove("fa-volume-up");
+					icon.classList.add("fa-volume-mute");
+				});
+			}
+		};
+
 	</script>
 
 	<script>
