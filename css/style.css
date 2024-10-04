@@ -2280,3 +2280,14 @@ form label {
 .header__image {
   background-position: center !important;
 }
+
+.logo-wed {
+  font-size: 20px;
+}
+
+/* Media query for desktop (min-width: 768px) */
+@media (min-width: 768px) {
+  .logo-wed {
+      font-size: 30px;
+  }
+}
