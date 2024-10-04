@@ -1,67 +1,45 @@
-/* Modal Gallery */
-.gallery-modal {
-  display: none; 
-  position: fixed; 
-  z-index: 1; 
-  padding-top: 100px; 
-  left: 0;
+/* Modal basic styling */
+.modal {
+  display: none;
+  position: fixed;
   top: 0;
-  width: 100%; 
-  height: 100%; 
-  overflow: auto;
-  background-color: rgba(0, 0, 0, 0.9); 
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
 }
 
 .modal-content {
   position: relative;
-  margin: auto;
-  padding: 0;
-  width: 90%;
-  max-width: 1200px;
+  width: 80%;
+  max-width: 600px;
+  background: white;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
-.slides {
-  display: none;
+.modal img {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
 }
 
-/* Điều chỉnh ảnh để fit chiều cao của màn hình mà không có khoảng trắng */
-.slides img {
-  width: 100%; /* Chiều rộng 100% */
-  height: 100vh; /* Chiều cao 100% của viewport */
-  object-fit: cover; /* Đảm bảo ảnh không bị bóp méo và đầy đủ không gian */
-  display: block;
-  margin: 0; /* Không có khoảng cách */
+/* Swiper specific styling */
+.swiper-container {
+  width: 100%;
+  height: 80vh;
 }
 
-/* Đóng modal */
-.close-modal {
-  position: absolute;
-  top: 15px;
-  right: 35px;
-  color: #fff;
-  font-size: 40px;
-  font-weight: bold;
-  cursor: pointer;
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-/* Nút điều hướng prev và next */
-.prev-slide, .next-slide {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  padding: 16px;
-  margin-top: -22px;
-  color: white;
-  font-weight: bold;
-  font-size: 20px;
-  user-select: none;
-}
-
-.prev-slide {
-  left: 0;
-}
-
-.next-slide {
-  right: 0;
+.swiper-slide img {
+  max-height: 100%;
+  object-fit: contain;
 }

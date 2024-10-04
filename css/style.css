@@ -1991,7 +1991,7 @@ form label {
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 1000;
+  z-index: 100;
   width: 59px; /* Chiều rộng mới */
   height: 56px; /* Chiều cao mới */
   transition: transform 0.3s ease;
