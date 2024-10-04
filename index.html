@@ -68,7 +68,7 @@
 	<!-- Theme style  -->
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/my-modal.css">
-
+	<link rel="stylesheet" href="css/timeline.css">
 	<!-- Modernizr JS -->
 	<script src="js/modernizr-2.6.2.min.js"></script>
 	<!-- FOR IE9 below -->
@@ -121,9 +121,14 @@
 		<nav class="fh5co-nav" role="navigation">
 			<div class="container">
 				<div class="row">
-					<div class="col-xs-2">
-						<div id="fh5co-logo"><a href="index.html">Wedding<strong>.</strong></a></div>
+					<div class="col-xs-12">
+						<div id="fh5co-logo"><a href="index.html" class="logo-wed"
+								style="font-family:'Dancing Script', cursive;">We &nbsp;Are
+								&nbsp;Getting
+								&nbsp;Married</a>
+						</div>
 					</div>
+
 					<!-- <div class="col-xs-2">
 						<div id="fh5co-logo">
 							<a href="index.html">
@@ -131,10 +136,10 @@
 							</a>
 						</div>
 					</div> -->
-					<div class="col-xs-10 text-right menu-1">
+					<!-- <div class="col-xs-10 text-right menu-1">
 						<ul>
-							<!-- <li class="active"><a href="index.html">Home</a></li> -->
-							<!-- <li><a href="about.html">Story</a></li>
+							<li class="active"><a href="index.html">Home</a></li>
+							<li><a href="about.html">Story</a></li>
 							<li class="has-dropdown">
 								<a href="services.html">Services</a>
 								<ul class="dropdown">
@@ -153,9 +158,9 @@
 									<li><a href="#">jQuery</a></li>
 								</ul>
 							</li>
-							<li><a href="contact.html">Contact</a></li> -->
+							<li><a href="contact.html">Contact</a></li>
 						</ul>
-					</div>
+					</div> -->
 				</div>
 
 			</div>
@@ -169,10 +174,14 @@
 					<div class="col-md-8 col-md-offset-2 text-center">
 						<div class="display-t">
 							<div class="display-tc animate-box" data-animate-effect="fadeIn">
+								<br>
 								<h1>Duy Anh</h1>
 								<h1>Lan Chi</h1>
-								<h2>We Are Getting Married</h2>
+								<!-- <h2>We Are Getting Married</h2> -->
 								<div></div>
+								<br>
+								<br>
+								<br>
 								<div class="simply-countdown simply-countdown-one"></div>
 								<p><a href="#" class="btn btn-default btn-sm">Save the date</a></p>
 							</div>
@@ -305,6 +314,12 @@
 			</div>
 		</div>
 
+		<div id="wedding-timeline" class="image-container">
+			<picture>
+				<source media="(max-width: 767px)" srcset="images/wedding-img/timeline.jpg">
+				<img src="images/wedding-img/timeline-desktop.jpg" alt="Wedding Timeline Image">
+			</picture>
+		</div>
 		<div id="fh5co-couple-story">
 			<div class="container">
 				<div class="row">
@@ -381,44 +396,12 @@
 				</div>
 				<div class="row row-bottom-padded-md">
 					<div class="col-md-12">
-						<!-- <ul id="fh5co-gallery-list">
-							<li class="one-third animate-box" data-animate-effect="fadeIn"
-								style="background-image: url(images/gallery-1.jpg); ">
-								<a href="images/gallery-1.jpg">
-									<div class="case-studies-summary">
-										<span>10 Photos</span>
-										<h2>Collection 1</h2>
-									</div>
-								</a>
-							</li>
-							<li class="one-third animate-box" data-animate-effect="fadeIn"
-								style="background-image: url(images/gallery-2.jpg); ">
-								<a href="#" class="color-2">
-									<div class="case-studies-summary">
-										<span>10 Photos</span>
-										<h2>Collection 2</h2>
-									</div>
-								</a>
-							</li>
-
-
-							<li class="one-third animate-box" data-animate-effect="fadeIn"
-								style="background-image: url(images/gallery-3.jpg); ">
-								<a href="#" class="color-3">
-									<div class="case-studies-summary">
-										<span>10 Photos</span>
-										<h2>Collection 3</h2>
-									</div>
-								</a>
-							</li>
-						</ul> -->
 						<ul id="fh5co-gallery-list">
 							<li class="one-third animate-box" data-animate-effect="fadeIn"
 								style="background-image: url(images/gallery-1.jpg);">
 								<a href="#album1-modal">
 									<div class="case-studies-summary">
-										<span>9 Photos</span>
-										<h2>Collection 1</h2>
+										<span>10 Photos</span>
 									</div>
 								</a>
 							</li>
@@ -426,8 +409,7 @@
 								style="background-image: url(images/gallery-2.jpg);">
 								<a href="#album2-modal">
 									<div class="case-studies-summary">
-										<span>9 Photos</span>
-										<h2>Collection 2</h2>
+										<span>10 Photos</span>
 									</div>
 								</a>
 							</li>
@@ -435,8 +417,7 @@
 								style="background-image: url(images/gallery-3.jpg);">
 								<a href="#album3-modal">
 									<div class="case-studies-summary">
-										<span>9 Photos</span>
-										<h2>Collection 3</h2>
+										<span>10 Photos</span>
 									</div>
 								</a>
 							</li>
@@ -448,7 +429,7 @@
 			</div>
 		</div>
 		<!-- Modal cho Album 1 -->
-		<div id="album1-modal" class="gallery-modal">
+		<!-- <div id="album1-modal" class="gallery-modal">
 			<span class="close-modal">&times;</span>
 			<div class="modal-content">
 				<div class="slides">
@@ -481,12 +462,10 @@
 				<div class="slides">
 					<img src="images/wedding-img/AMV_8279.webp" style="width:100%">
 				</div>
-				<!-- Thêm các ảnh khác vào đây -->
 				<a class="prev-slide" onclick="plusSlides(-1)">&#10094;</a>
 				<a class="next-slide" onclick="plusSlides(1)">&#10095;</a>
 
-				<!-- Danh sách preview dưới đây -->
-				<!-- <div class="preview-gallery">
+				<div class="preview-gallery">
 					<img class="preview-thumbnail" src="images/wedding-img/AMV_7399.webp" onclick="currentSlide(1)">
 					<img class="preview-thumbnail" src="images/wedding-img/AMV_7551.webp" onclick="currentSlide(2)">
 					<img class="preview-thumbnail" src="images/wedding-img/AMV_7671.webp" onclick="currentSlide(3)">
@@ -496,12 +475,12 @@
 					<img class="preview-thumbnail" src="images/album1/photo7.jpg" onclick="currentSlide(7)">
 					<img class="preview-thumbnail" src="images/album1/photo8.jpg" onclick="currentSlide(8)">
 					<img class="preview-thumbnail" src="images/album1/photo9.jpg" onclick="currentSlide(9)">
-				</div> -->
+				</div>
 			</div>
-		</div>
+		</div> -->
 
 		<!-- Modal cho Album 2 -->
-		<div id="album2-modal" class="gallery-modal">
+		<!-- <div id="album2-modal" class="gallery-modal">
 			<span class="close-modal">&times;</span>
 			<div class="modal-content">
 				<div class="slides">
@@ -537,10 +516,10 @@
 				<a class="prev-slide" onclick="plusSlides(-1)">&#10094;</a>
 				<a class="next-slide" onclick="plusSlides(1)">&#10095;</a>
 			</div>
-		</div>
+		</div> -->
 
 		<!-- Modal cho Album 3 -->
-		<div id="album3-modal" class="gallery-modal">
+		<!-- <div id="album3-modal" class="gallery-modal">
 			<span class="close-modal">&times;</span>
 			<div class="modal-content">
 				<div class="slides">
@@ -576,7 +555,7 @@
 				<a class="prev-slide" onclick="plusSlides(-1)">&#10094;</a>
 				<a class="next-slide" onclick="plusSlides(1)">&#10095;</a>
 			</div>
-		</div>
+		</div> -->
 
 		<!-- <div id="fh5co-counter" class="fh5co-bg fh5co-counter" style="background-image:url(images/img_bg_5.jpg);">
 			<div class="overlay"></div>
@@ -776,18 +755,6 @@
 			<div class="row animate-box">
 				<div class="col-md-10 col-md-offset-1">
 					<form class="form-inline" onsubmit="return showSurvey();">
-						<!-- <div class="col-md-4 col-sm-4">
-								<div class="form-group">
-									<label for="name" class="sr-only">Name</label>
-									<input type="name" class="form-control" id="name" placeholder="Name">
-								</div>
-							</div>
-							<div class="col-md-4 col-sm-4">
-								<div class="form-group">
-									<label for="email" class="sr-only">Email</label>
-									<input type="email" class="form-control" id="email" placeholder="Email">
-								</div>
-							</div> -->
 						<div class="col-md-12 col-sm-12">
 							<button type="submit" id="surveyButton" class="btn btn-default btn-block">Xác nhận tham
 								dự</button>
@@ -805,51 +772,7 @@
 			</div>
 		</div>
 	</div>
-
-	<!-- <div id="thank-you" class="fh5co-bg fh5co-counter">
-		<div class=" container">
-			<div class="row">
-				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box">
-					<br><br>
-					<h2>Thank You!</h2>
-					<h3 style="font-family:Dancing Script, cursive; font-size: 40px;">Duy Anh & Lan Chi</h3>
-				</div>
-			</div>
-		</div>
-	</div> -->
-
-	<!-- <footer id="fh5co-footer" role="contentinfo">
-			<div class="container">
-
-				<div class="row copyright">
-					<div class="col-md-12 text-center">
-						<p>
-						<ul class="fh5co-social-icons">
-							<li><a href="#"><i class="icon-twitter"></i></a></li>
-							<li><a href="#"><i class="icon-facebook"></i></a></li>
-							<li><a href="#"><i class="icon-linkedin"></i></a></li>
-						</ul>
-						</p>
-					</div>
-				</div>
-
-			</div>
-		</footer> -->
 	</div>
-
-	<!-- <div id="qrPopup" class="qr-popup"></div>
-	<div class="qr-popup-content">
-		<span class="qr-popup-close">&times;</span>
-		<h3>Mã QR của cô dâu và chú rể</h3>
-		<div class="qr-popup-images">
-			<img src="qr-code-bride.png" alt="QR Code của cô dâu">
-			<img src="qr-code-groom.png" alt="QR Code của chú rể">
-		</div>
-	</div>
-	</div> -->
-	<!-- <div class="gototop js-top">
-		<a href="#" class="js-gotop"><i class="fa-solid fa-bars"></i></a>
-	</div> -->
 	<div class="menu-buttons" id="menuButtons">
 		<a href="https://docs.google.com/forms/d/e/1FAIpQLSc_wR5TampJsadTYMkHG03UKWxmuG1J1ZaRduGc1f7Ou7vCTA/viewform"
 			target="_blank">
@@ -860,50 +783,12 @@
 			<i class="fas fa-envelope-open-text"></i>
 			<span>Xác Nhận Tham Dự</span> <!-- Text cho nút xác nhận tham dự -->
 		</a>
-		<!-- <section class="wedding-menu">
-			<a href="#blessingSection">
-				<i class="fas fa-gift"></i>
-				<span>Mừng Cưới</span>
-			</a>
-		</section> -->
 		<a href="#weddingSection">
 			<i class="fas fa-gift"></i>
 			<span>Mừng Cưới</span>
 		</a>
 	</div>
 	<button class="floating-button" id="mainButton"><i class="fas fa-bars"></i></button>
-	<!-- Pop-up QR -->
-	<!-- <div id="qrPopup" class="qr-popup">
-		<div class="qr-popup-content">
-			<span class="qr-popup-close">&times;</span>
-			<h3>Mã QR của cô dâu và chú rể</h3>
-			<div class="qr-popup-images">
-				 Tới cô dâu
-				<div>
-					<h4>Tới cô dâu</h4>
-					<img src="./images/QR-codau.png" alt="QR Code của cô dâu">
-					<div class="account-info">
-						<p><strong>Ngân hàng:</strong> Techcombank</p>
-						<p><strong>Tên tài khoản:</strong> Nguyễn Thị A</p>
-						<p><strong>Số tài khoản:</strong> 123456789</p>
-						<p><strong>Chi nhánh:</strong> Hà Nội</p>
-					</div>
-				</div>
-				Tới chú rể
-				<div>
-					<h4>Tới chú rể</h4>
-					<img src="./images/QR-chure.png" alt="QR Code của chú rể">
-					<div class="account-info">
-						<p><strong>Ngân hàng:</strong> Vietcombank</p>
-						<p><strong>Tên tài khoản:</strong> Trần Văn B</p>
-						<p><strong>Số tài khoản:</strong> 987654321</p>
-						<p><strong>Chi nhánh:</strong> Hồ Chí Minh</p>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div> -->
-
 	<script>
 		const mainButton = document.getElementById('mainButton');
 		const menuButtons = document.getElementById('menuButtons');

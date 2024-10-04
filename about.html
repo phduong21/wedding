@@ -1,134 +1,20 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vi">
 
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Mừng Cưới</title>
-	<style>
-		/* Phong cách tổng quát */
-		body {
-			font-family: Arial, sans-serif;
-			text-align: center;
-			margin: 0;
-			padding: 0;
-		}
-
-		section {
-			padding: 50px;
-		}
-
-		#menu a {
-			font-size: 24px;
-			color: #FF69B4;
-			text-decoration: none;
-		}
-
-		#menu i {
-			margin-right: 10px;
-		}
-
-		button {
-			background-color: #FF69B4;
-			color: white;
-			padding: 10px 20px;
-			border: none;
-			cursor: pointer;
-			font-size: 16px;
-		}
-
-		button:hover {
-			background-color: #FF1493;
-		}
-
-		/* Pop-up style */
-		.popup {
-			display: none;
-			position: fixed;
-			top: 0;
-			left: 0;
-			width: 100%;
-			height: 100%;
-			background-color: rgba(0, 0, 0, 0.5);
-		}
-
-		.popup-content {
-			background-color: #fff;
-			margin: 15% auto;
-			padding: 20px;
-			width: 80%;
-			max-width: 500px;
-			position: relative;
-			text-align: center;
-		}
-
-		.close-btn {
-			position: absolute;
-			top: 10px;
-			right: 20px;
-			font-size: 24px;
-			cursor: pointer;
-		}
-
-		.qr-images img {
-			width: 45%;
-			margin: 10px;
-		}
-	</style>
+	<title>Wedding Timeline</title>
+	<link rel="stylesheet" href="css/timeline.css">
 </head>
 
 <body>
-
-	<!-- Nút Mừng Cưới -->
-	<section id="menu">
-		<a href="#weddingSection">
-			<i class="fas fa-gift"></i>
-			<span>Mừng Cưới</span>
-		</a>
-	</section>
-
-	<!-- Section Chúc Phúc -->
-	<section id="weddingSection">
-		<h2>Chúc phúc cho cô dâu chú rể</h2>
-		<button id="blessingButton">Chúc Phúc</button>
-	</section>
-
-	<!-- Pop-up -->
-	<div id="qrPopup" class="popup">
-		<div class="popup-content">
-			<span class="close-btn">&times;</span>
-			<h3>Mã QR của cô dâu và chú rể</h3>
-			<div class="qr-images">
-				<img src="./images/QR-chure.png" alt="QR Code của chu rể">
-				<img src="./images/QR-codau.png" alt="QR Code của cô dâu">
-			</div>
-		</div>
+	<div class="image-container">
+		<picture>
+			<source media="(max-width: 767px)" srcset="images/wedding-img/timeline.jpg">
+			<img src="images/wedding-img/timeline-desktop.jpg" alt="Wedding Timeline Image">
+		</picture>
 	</div>
-
-	<script>
-		// Lấy phần tử nút chúc phúc và pop-up
-		const blessingButton = document.getElementById('blessingButton');
-		const qrPopup = document.getElementById('qrPopup');
-		const closeBtn = document.querySelector('.close-btn');
-
-		// Khi nhấn nút "Chúc Phúc", hiển thị pop-up
-		blessingButton.addEventListener('click', function () {
-			qrPopup.style.display = 'block';
-		});
-
-		// Khi nhấn nút "X" để đóng pop-up
-		closeBtn.addEventListener('click', function () {
-			qrPopup.style.display = 'none';
-		});
-
-		// Đóng pop-up khi nhấn ra ngoài
-		window.addEventListener('click', function (event) {
-			if (event.target == qrPopup) {
-				qrPopup.style.display = 'none';
-			}
-		});
-	</script>
-
 </body>
 
 </html>

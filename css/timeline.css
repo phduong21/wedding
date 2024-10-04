@@ -1,0 +1,36 @@
+/* Styling for the container */
+.image-container {
+  text-align: center;
+  margin: 40px auto; /* Thêm khoảng cách phía trên (40px) và căn giữa */
+  max-width: 100%; /* Đảm bảo container chiếm toàn bộ chiều rộng */
+  padding: 10px; /* Thêm khoảng cách bên ngoài để tách viền khỏi cạnh màn hình */
+}
+
+/* Image styling */
+.image-container img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px; /* Bo cong các góc của ảnh */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Đổ bóng */
+  border: 2px dashed #A9A9A9; /* Đường viền dash màu xám, nét nhỏ (2px) */
+  padding: 10px; /* Khoảng cách giữa ảnh và đường viền */
+  border-radius: 20px; /* Bo cong đường viền */
+}
+
+/* Responsive for different screen sizes */
+
+/* Mobile */
+@media (max-width: 767px) {
+  .image-container img {
+      max-width: 95%; /* Ảnh gần chiếm toàn bộ chiều rộng màn hình */
+      margin-top: 2em;
+  }
+}
+
+/* iPad and Desktop */
+@media (min-width: 768px) {
+  .image-container img {
+      max-width: 98%; /* Ảnh chiếm 90% chiều rộng trên iPad và desktop */
+      margin-top: 2em;
+  }
+}
