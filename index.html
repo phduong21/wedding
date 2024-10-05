@@ -187,18 +187,21 @@
 					<div class="col-md-12 col-md-offset-0 text-center">
 						<div class="display-t">
 							<div class="display-tc animate-box" data-animate-effect="fadeIn">
-								<br>
-								<br>
-								<!-- <h1>Duy Anh</h1> -->
-								<h1>Duy Anh &nbsp;<strong>&</strong>&nbsp; Lan Chi</h1>
-								<!-- <h2>We Are Getting Married</h2> -->
-								<div></div>
-								<br>
-								<br>
-								<br>
-								<br>
-								<div class="simply-countdown simply-countdown-one"></div>
-								<p><a href="#" class="btn btn-default btn-sm">Save the date</a></p>
+								<div class="desktop-content">
+									<h1>Duy Anh &nbsp;<strong>&</strong>&nbsp; Lan Chi</h1>
+									<div class="simply-countdown simply-countdown-one"></div>
+									<p><a href="#" class="btn btn-default btn-sm">Save the date</a></p>
+								</div>
+								<div class="mobile-content">
+									<br>
+									<h1>Duy Anh</h1>
+									<h1>Lan Chi</h1>
+									<br>
+									<br>
+									<br>
+									<div class="simply-countdown simply-countdown-one"></div>
+									<p><a href="#" class="btn btn-default btn-sm">Save the date</a></p>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -1402,21 +1405,6 @@
 				}
 			});
 		});
-	</script>
-	<script>
-		function addBrForMobile() {
-			if (window.innerWidth >= 1024) {
-				const container = document.querySelector('.display-tc.animate-box');
-				if (container && !container.classList.contains('br-added')) {
-					container.insertAdjacentHTML('afterbegin', '<br><br>');
-					container.classList.add('br-added'); // Đảm bảo không thêm thẻ <br> nhiều lần
-				}
-			}
-		}
-
-		// Gọi hàm khi tải trang và khi thay đổi kích thước màn hình
-		window.addEventListener('load', addBrForMobile);
-		window.addEventListener('resize', addBrForMobile);
 	</script>
 </body>
 

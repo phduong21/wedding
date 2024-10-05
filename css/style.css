@@ -2328,3 +2328,18 @@ form label {
   font-size: 22px;
     font-family: 'Dancing Script';
 }
+
+/* Ẩn phần nội dung mobile trên desktop và ngược lại */
+.mobile-content {
+  display: none;
+}
+
+@media only screen and (max-width: 767px) {
+  /* Khi màn hình nhỏ hơn 768px (mobile), hiển thị nội dung mobile và ẩn desktop */
+  .desktop-content {
+      display: none;
+  }
+  .mobile-content {
+      display: block;
+  }
+}
