@@ -16,9 +16,10 @@
   position: relative;
   width: 80%;
   max-width: 600px;
-  background: white;
+  background: unset;
   padding: 20px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  box-shadow: unset;
+  border: none;
 }
 
 .modal img {
@@ -37,7 +38,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-right: 5px; /* Khoảng cách giữa các slide */
 }
 
 .swiper-slide img {
@@ -45,3 +45,56 @@
   object-fit: contain;
 }
 
+#album2-modal, #album1-modal, #album3-modal {
+
+  .swiper-container {
+    position: relative;
+  }
+  .swiper-button-next:after, .swiper-button-prev:after {
+    content: '';
+  }
+  .swiper-button-next, .swiper-button-prev {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .swiper-button-next {
+    right: 25px;
+  }
+  .swiper-button-prev {
+    left: -32px; /* Adjust this as needed */
+  }
+  .swiper-button-next i, .swiper-button-prev i {
+    font-size: 24px;
+    color: white;
+  }
+}
+@media screen and (max-width: 768px) {
+  #album2-modal, #album1-modal, #album3-modal {
+    .swiper-container {
+      height: auto;
+    }
+    .swiper-button-next {
+      right: -30px;
+    }
+  }
+}
+@media screen and (max-width: 425px) {
+  #album2-modal, #album1-modal, #album3-modal {
+    .modal-content {
+      width: 100%;
+    }
+
+    .swiper-button-next{
+      right: -15px;
+    }
+    .swiper-button-prev{
+      left: -15px;
+    }
+  }
+}
