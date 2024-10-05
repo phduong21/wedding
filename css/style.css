@@ -563,7 +563,7 @@ figure {
   top: 16px;
   left: 50%;
   margin-left: -80px;
-  background-color: #999999;
+  /* background-color: #999999; */
   z-index: 100;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
@@ -2292,5 +2292,34 @@ form label {
 @media (min-width: 768px) {
   .logo-wed {
       font-size: 30px;
+  }
+}
+
+.heart-icon{
+  background: none; /* Remove the background image */
+    text-align: center;
+    font-size: 48px; /* Default size */
+    color: #b48418; /* Updated heart color */
+    line-height: 1; /* Adjust the line height to center the icon vertically */
+}
+
+/* For desktop view (screen width of 1024px and above) */
+@media (min-width: 1024px) {
+  .heart-icon {
+      font-size: 96px; /* Larger font size for desktop */
+      padding-top: 20px; /* Add padding at the top for desktop */
+  }
+
+  .heart-icon-img {
+    font-size: 96px; /* Larger font size for desktop */
+    padding-top: 20px; /* Add padding at the top for desktop */
+}
+}
+
+@media (max-width: 1024px) {
+  .heart-icon-img {
+      width: 70px; /* Larger font size for desktop */
+      padding-top: 20px; /* Add padding at the top for desktop */
+      height: 70px;
   }
 }
