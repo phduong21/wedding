@@ -1091,7 +1091,7 @@ form label {
 .couple-half h3 {
   font-family: "Sacramento", Arial, serif;
   color: #b48418;
-  font-size: 30px;
+  font-size: 40px;
 }
 .couple-half .groom,
 .couple-half .bride {
@@ -2322,4 +2322,9 @@ form label {
       padding-top: 20px; /* Add padding at the top for desktop */
       height: 70px;
   }
+}
+
+.dob{
+  font-size: 22px;
+    font-family: 'Dancing Script';
 }

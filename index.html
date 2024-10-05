@@ -184,14 +184,16 @@
 			<div class="overlay"></div>
 			<div class="container">
 				<div class="row">
-					<div class="col-md-8 col-md-offset-2 text-center">
+					<div class="col-md-12 col-md-offset-0 text-center">
 						<div class="display-t">
 							<div class="display-tc animate-box" data-animate-effect="fadeIn">
 								<br>
-								<h1>Duy Anh</h1>
-								<h1>Lan Chi</h1>
+								<br>
+								<!-- <h1>Duy Anh</h1> -->
+								<h1>Duy Anh &nbsp;<strong>&</strong>&nbsp; Lan Chi</h1>
 								<!-- <h2>We Are Getting Married</h2> -->
 								<div></div>
+								<br>
 								<br>
 								<br>
 								<br>
@@ -220,8 +222,7 @@
 						</div>
 						<div class="desc-groom">
 							<h3>Duy Anh</h3>
-							<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,
-								there live the blind texts. Separated they live in Bookmarksgrove</p>
+							<p class="dob">25 / 12 / 1997</p>
 						</div>
 					</div>
 					<p class="heart text-center"><i class="icon-heart2"></i></p>
@@ -231,8 +232,7 @@
 						</div>
 						<div class="desc-bride">
 							<h3>Lan Chi</h3>
-							<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,
-								there live the blind texts. Separated they live in Bookmarksgrove</p>
+							<p class="dob">20 / 09 / 1998</p>
 						</div>
 					</div>
 				</div>
@@ -257,7 +257,7 @@
 										<h3>Lễ ăn hỏi</h3>
 										<div class="event-col">
 											<i class="icon-clock"></i>
-											<span>8:00 PM</span>
+											<span>9:00 AM</span>
 										</div>
 										<div class="event-col">
 											<i class="icon-calendar"></i>
@@ -750,7 +750,7 @@
 				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
 					<h2>Tham Gia Cùng Chúng Tôi</h2>
 					<p>Chúng tôi rất mong được chào đón bạn trong ngày đặc biệt này. Xin vui lòng xác nhận việc tham
-						dự lễ vow của bạn bằng cách điền vào mẫu dưới đây</p>
+						dự lễ cưới của chúng tôi bằng cách điền vào mẫu dưới đây</p>
 				</div>
 			</div>
 			<div class="row animate-box">
@@ -1402,6 +1402,21 @@
 				}
 			});
 		});
+	</script>
+	<script>
+		function addBrForMobile() {
+			if (window.innerWidth >= 1024) {
+				const container = document.querySelector('.display-tc.animate-box');
+				if (container && !container.classList.contains('br-added')) {
+					container.insertAdjacentHTML('afterbegin', '<br><br>');
+					container.classList.add('br-added'); // Đảm bảo không thêm thẻ <br> nhiều lần
+				}
+			}
+		}
+
+		// Gọi hàm khi tải trang và khi thay đổi kích thước màn hình
+		window.addEventListener('load', addBrForMobile);
+		window.addEventListener('resize', addBrForMobile);
 	</script>
 </body>
 
